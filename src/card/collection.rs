@@ -2,8 +2,8 @@ use rand::Rng;
 
 use super::{Ask, deck::Deck, Card};
 
-pub struct Collection<'a, R: Rng> {
-    deck: Deck<'a>,
+pub struct Collection<R: Rng> {
+    deck: Deck,
     deck_index: usize,
     all_cases: bool,
     cycle: u32,
@@ -11,9 +11,9 @@ pub struct Collection<'a, R: Rng> {
     rng: R
 }
 
-impl<'a, R: Rng> Collection<'a, R> {
+impl<R: Rng> Collection<R> {
     #[inline]
-    pub fn new(deck: Deck<'a>, rng: R) -> Self {
+    pub fn new(deck: Deck, rng: R) -> Self {
         Self {
             deck_index: deck.len(),
             deck,
@@ -35,12 +35,12 @@ impl<'a, R: Rng> Collection<'a, R> {
     }
 
     #[inline]
-    pub fn extend(&'a mut self, by: u32) {
+    pub fn extend(&mut self, by: u32) {
         self.max_cycle += by;
     }
 }
 
-impl<'a, R: Rng> Ask for Collection<'a, R> {
+impl<R: Rng> Ask for Collection<R> {
     fn next_question(&mut self) -> &Card {
         self.deck_index += 1;
 

@@ -5,14 +5,13 @@ use rand::{
 
 use super::{Ask, Card};
 
-#[derive(Clone)]
-pub struct Deck<'a> {
-    cards: Vec<Card<'a>>,
+pub struct Deck {
+    cards: Vec<Card>,
     question_index: usize,
 }
 
-impl<'a> Deck<'a> {
-    pub const fn new(cards: Vec<Card<'a>>) -> Self {
+impl Deck {
+    pub const fn new(cards: Vec<Card>) -> Self {
         Self {
             cards,
             question_index: 0,
@@ -25,7 +24,7 @@ impl<'a> Deck<'a> {
     }
 
     #[inline]
-    pub fn push(&mut self, card: Card<'a>) {
+    pub fn push(&mut self, card: Card) {
         self.cards.push(card)
     }
 
@@ -53,22 +52,9 @@ impl<'a> Deck<'a> {
 
         Some(())
     }
-
-    #[inline]
-    pub fn duplicate(&'a self) -> Self {
-        let cards = self
-            .cards
-            .iter()
-            .map(|card| card.duplicate())
-            .collect::<Vec<Card>>();
-        Self {
-            cards,
-            question_index: self.question_index,
-        }
-    }
 }
 
-impl<'a> Ask for Deck<'a> {
+impl Ask for Deck {
     fn next_question(&mut self) -> &Card {
         let card = self.cards.get(self.question_index).unwrap();
         self.question_index = (self.question_index + 1) % self.cards.len();

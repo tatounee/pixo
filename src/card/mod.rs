@@ -2,51 +2,40 @@ pub mod deck;
 pub mod collection;
 
 use std::mem;
-use std::borrow::Cow;
 
 pub trait Ask {
     fn next_question(&mut self) -> &Card;
 }
 
-#[derive(Clone)]
-pub struct Card<'a> {
-    recto: Cow<'a, String>,
-    verso: Cow<'a, String>,
-    recto_only: bool,
+pub struct Card {
+    recto: String,
+    verso: String,
+    only_recto: bool,
 }
 
-impl<'a> Card<'a> {
+impl Card {
     pub const fn new(recto: String, verso: String) -> Self {
         Self {
-            recto: Cow::Owned(recto),
-            verso: Cow::Owned(verso),
-            recto_only: false,
+            recto: recto,
+            verso: verso,
+            only_recto: false,
         }
     }
 
     #[inline]
     pub fn only_recto(&mut self, only: bool) {
-        self.recto_only = only
-    }
-
-    #[inline]
-    pub fn duplicate(&'a self) -> Self {
-        Self {
-            recto: Cow::Borrowed(self.recto.as_ref()),
-            verso: Cow::Borrowed(self.verso.as_ref()),
-            recto_only: self.recto_only,
-        }
+        self.only_recto = only
     }
 
     #[inline]
     pub fn flip(&mut self) {
-        if !self.recto_only {
+        if !self.only_recto {
             mem::swap(&mut self.recto, &mut self.verso)
         }
     }
 }
 
-impl<'a> Ask for Card<'a> {
+impl Ask for Card {
     fn next_question(&mut self) -> &Card {
         self
     }
