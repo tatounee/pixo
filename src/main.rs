@@ -1,3 +1,4 @@
+mod card;
 use std::path::Path;
 
 use clap::{crate_authors, crate_version, App, Arg};
