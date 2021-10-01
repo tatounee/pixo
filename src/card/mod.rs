@@ -6,9 +6,9 @@ use std::mem;
 use crate::ask::Ask;
 
 pub struct Card {
-    recto: String,
-    verso: String,
-    only_recto: bool,
+    pub recto: String,
+    pub verso: String,
+    pub only_recto: bool,
 }
 
 impl Card {
