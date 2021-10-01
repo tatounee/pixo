@@ -8,14 +8,16 @@ use crate::ask::Ask;
 pub struct Card {
     pub recto: String,
     pub verso: String,
+    pub tip: Tip,
     pub only_recto: bool,
 }
 
 impl Card {
-    pub const fn new(recto: String, verso: String) -> Self {
+    pub const fn new(recto: String, verso: String, tip: Tip) -> Self {
         Self {
             recto: recto,
             verso: verso,
+            tip,
             only_recto: false,
         }
     }
@@ -37,4 +39,10 @@ impl Ask for Card {
     fn next_question(&mut self) -> &Card {
         self
     }
+}
+
+pub enum Tip {
+    None,
+    One(String),
+    RectoVerso(String, String),
 }
