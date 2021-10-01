@@ -1,5 +1,5 @@
-pub mod deck;
 pub mod collection;
+pub mod deck;
 
 use std::mem;
 
@@ -15,8 +15,8 @@ pub struct Card {
 impl Card {
     pub const fn new(recto: String, verso: String, tip: Tip) -> Self {
         Self {
-            recto: recto,
-            verso: verso,
+            recto,
+            verso,
             tip,
             only_recto: false,
         }

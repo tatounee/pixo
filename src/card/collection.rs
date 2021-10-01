@@ -10,9 +10,8 @@ pub struct Collection<R: Rng> {
     deck_index: usize,
     all_cases: bool,
     cycle: u32,
-    max_cycle: u32,
-    rng: R
     max_cycle: NonZeroU32,
+    rng: R,
 }
 
 impl<R: Rng> Collection<R> {
@@ -23,8 +22,8 @@ impl<R: Rng> Collection<R> {
             deck,
             all_cases: false,
             cycle: 0,
-            rng
             max_cycle: NonZeroU32::new(1).unwrap(),
+            rng,
         }
     }
 
