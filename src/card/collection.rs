@@ -26,6 +26,10 @@ impl<R: Rng> Collection<R> {
     }
 
     #[inline]
+    pub fn verso_mode(&mut self) {
+        self.deck.flip_all();
+    }
+
     #[inline]
     pub fn all_cases_mode(&mut self) {
         self.all_cases = true
