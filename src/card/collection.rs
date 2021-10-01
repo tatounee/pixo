@@ -26,12 +26,13 @@ impl<R: Rng> Collection<R> {
     }
 
     #[inline]
-    pub fn all_cases(&mut self, all: bool) {
-        self.all_cases = all
+    #[inline]
+    pub fn all_cases_mode(&mut self) {
+        self.all_cases = true
     }
 
     #[inline]
-    pub fn active_random(&mut self) {
+    pub fn random_mode(&mut self) {
         self.deck.flip_random(&mut self.rng);
     }
 
