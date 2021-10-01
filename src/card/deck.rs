@@ -3,7 +3,8 @@ use rand::{
     Rng,
 };
 
-use super::{Ask, Card};
+use super::Card;
+use crate::ask::Ask;
 
 pub struct Deck {
     cards: Vec<Card>,

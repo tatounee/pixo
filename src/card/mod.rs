@@ -3,9 +3,7 @@ pub mod collection;
 
 use std::mem;
 
-pub trait Ask {
-    fn next_question(&mut self) -> &Card;
-}
+use crate::ask::Ask;
 
 pub struct Card {
     recto: String,

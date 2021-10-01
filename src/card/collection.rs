@@ -1,6 +1,7 @@
 use rand::Rng;
 
-use super::{Ask, deck::Deck, Card};
+use super::{deck::Deck, Card};
+use crate::ask::Ask;
 
 pub struct Collection<R: Rng> {
     deck: Deck,
