@@ -1,3 +1,5 @@
+use std::num::NonZeroU32;
+
 use rand::Rng;
 
 use super::{deck::Deck, Card};
@@ -10,6 +12,7 @@ pub struct Collection<R: Rng> {
     cycle: u32,
     max_cycle: u32,
     rng: R
+    max_cycle: NonZeroU32,
 }
 
 impl<R: Rng> Collection<R> {
@@ -20,8 +23,8 @@ impl<R: Rng> Collection<R> {
             deck,
             all_cases: false,
             cycle: 0,
-            max_cycle: 1,
             rng
+            max_cycle: NonZeroU32::new(1).unwrap(),
         }
     }
 
@@ -41,8 +44,8 @@ impl<R: Rng> Collection<R> {
     }
 
     #[inline]
-    pub fn extend(&mut self, by: u32) {
-        self.max_cycle += by;
+    pub fn pass(&mut self, pass: NonZeroU32) {
+        self.max_cycle = pass;
     }
 }
 
