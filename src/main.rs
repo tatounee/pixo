@@ -3,6 +3,7 @@
 mod ask;
 mod card;
 mod load;
+mod deck;
 
 use std::error::Error;
 use std::num::NonZeroU32;
@@ -10,10 +11,9 @@ use std::{convert, path::Path};
 
 use clap::{crate_authors, crate_version, App, Arg};
 
-use crate::{
-    card::{collection::Collection, deck::Deck},
-    load::load_data_file,
-};
+use crate::deck::Deck;
+use crate::load::load_data_file;
+
 
 fn main() -> Result<(), Box<dyn Error>> {
     let matches = App::new("Pixo")

@@ -3,7 +3,7 @@ use std::{io::BufReader, path::Path};
 use std::fs::File;
 use std::io;
 
-use crate::card::deck::Deck;
+use crate::deck::Deck;
 use crate::card::{Card, Tip};
 
 use serde::{de::Visitor, Deserialize, Deserializer};

@@ -3,7 +3,7 @@ use rand::{
     Rng,
 };
 
-use super::Card;
+use crate::card::Card;
 use crate::ask::Ask;
 
 pub struct Deck {

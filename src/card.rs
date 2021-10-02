@@ -1,6 +1,3 @@
-pub mod collection;
-pub mod deck;
-
 use std::{fmt, mem};
 
 use crate::ask::Ask;
