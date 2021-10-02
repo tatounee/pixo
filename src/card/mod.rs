@@ -1,7 +1,7 @@
 pub mod collection;
 pub mod deck;
 
-use std::mem;
+use std::{fmt, mem};
 
 use crate::ask::Ask;
 
@@ -30,7 +30,8 @@ impl Card {
     #[inline]
     pub fn flip(&mut self) {
         if !self.only_recto {
-            mem::swap(&mut self.recto, &mut self.verso)
+            mem::swap(&mut self.recto, &mut self.verso);
+            self.tip.flip()
         }
     }
 }
@@ -45,4 +46,23 @@ pub enum Tip {
     None,
     One(String),
     RectoVerso(String, String),
+}
+
+impl Tip {
+    #[inline]
+    fn flip(&mut self) {
+        if let Self::RectoVerso(a, b) = self {
+            mem::swap(a, b)
+        }
+    }
+}
+
+impl fmt::Display for Tip {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self {
+            Self::None => f.write_str("Wrong answer."),
+            Self::One(tip) => f.write_fmt(format_args!("Tip : {}.", tip)),
+            Self::RectoVerso(tip, _) => f.write_fmt(format_args!("Tip : {}.", tip))
+        }
+    }
 }
