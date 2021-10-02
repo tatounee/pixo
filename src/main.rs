@@ -17,6 +17,7 @@ use crate::load::load_data_file;
 
 
 fn main() -> Result<(), Box<dyn Error>> {
+    // Create Clap app
     let matches = App::new("Pixo")
         .version(crate_version!())
         .about("Pixo is a CLI fashcard app")
@@ -109,17 +110,18 @@ fn main() -> Result<(), Box<dyn Error>> {
         )
         .get_matches();
 
+    // Get data from path given by the user
     let input = Path::new(matches.value_of("card_path").unwrap());
-
     if input.is_dir() {
         panic!("Pixo can not read a folder of data files (.json files) yet.")
     }
-
     let data_file = load_data_file(input)?;
-    let deck = Deck::from(data_file);
 
+    // Create deck and asker builder
+    let deck = Deck::from(data_file);
     let mut asker = AskerBuilder::new(deck, rand::thread_rng());
 
+    // Matche all agrugment from the Clap app
     if matches.is_present("default") {
         if !matches.is_present("verso") {
             asker.flip_mode(FlipMode::Random(true))
@@ -138,6 +140,10 @@ fn main() -> Result<(), Box<dyn Error>> {
 
         asker.max_cycle(max_cycle)
     }
+
+    // Build and run pixo !
+    let asker = asker.build();
+    asker.run()?;
 
     Ok(())
 }

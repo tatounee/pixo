@@ -104,6 +104,46 @@ impl<R: Rng> Ask for Asker<R> {
     }
 }
 
+impl<R: Rng> Asker<R> {
+    pub fn run(mut self) -> Result<(), io::Error> {
+        let mut stdin = io::stdin();
+
+        while self.cycle_counter < self.max_cycle.get() {
+            self.ask(&mut stdin)?;
+            self.advance();
+        }
+
+        Ok(())
+    }
+
+    fn ask(&self, stdin: &mut Stdin) -> Result<(), io::Error> {
+        let card = self.get_card();
+
+        let mut user_answer = String::new();
+        let mut user_tries = 1;
+
+        println!("{}", card.recto);
+
+        stdin.read_line(&mut user_answer)?;
+
+        loop {
+            if user_answer.trim() == card.verso {
+                break;
+            } else if user_tries == self.tries.get() {
+                println!("Answer : {}", card.verso);
+                break;
+            } else {
+                println!("{}", card.tip);
+
+                stdin.read_line(&mut user_answer)?;
+            }
+
+            user_tries += 1;
+        }
+
+        Ok(())
+    }
+}
 
 pub enum FlipMode {
     Recto,
@@ -120,28 +160,3 @@ impl FlipMode {
         }
     }
 }
-
-// #[cfg(test)]
-// mod tests {
-//     use crate::card::Tip;
-
-//     use super::*;
-
-//     #[test]
-//     fn is_it_safe() {
-//         let card = Card::new(
-//             "The best programming language".into(),
-//             "Rust".into(),
-//             Tip::None,
-//         );
-
-//         let deck = Deck::new(vec![card]);
-
-//         let rng = rand::thread_rng();
-//         let collection = Collection::new(deck, rng);
-
-//         let asker = Asker::new(collection, NonZeroU32::new(2).unwrap());
-
-//         asker.run().unwrap();
-//     }
-// }
