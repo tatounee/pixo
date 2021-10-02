@@ -11,6 +11,7 @@ use std::{convert, path::Path};
 
 use clap::{crate_authors, crate_version, App, Arg};
 
+use crate::ask::{AskerBuilder, FlipMode};
 use crate::deck::Deck;
 use crate::load::load_data_file;
 
@@ -117,36 +118,25 @@ fn main() -> Result<(), Box<dyn Error>> {
     let data_file = load_data_file(input)?;
     let deck = Deck::from(data_file);
 
-    let mut collection = Collection::new(deck, rand::thread_rng());
+    let mut asker = AskerBuilder::new(deck, rand::thread_rng());
 
     if matches.is_present("default") {
         if !matches.is_present("verso") {
-            collection.random_mode()
+            asker.flip_mode(FlipMode::Random(true))
         }
-        collection.all_cases_mode();
-        collection.pass(NonZeroU32::new(2).unwrap())
+        asker.max_cycle(NonZeroU32::new(2).unwrap())
     }
 
     if matches.is_present("verso") {
-        collection.verso_mode()
+        asker.flip_mode(FlipMode::Verso)
     } else if matches.is_present("random") {
-        collection.random_mode();
-
-        if matches.is_present("all_cases") {
-            collection.all_cases_mode()
-        }
+        asker.flip_mode(FlipMode::Random(matches.is_present("all_cases")));
     }
 
     if let Some(pass) = matches.value_of("pass") {
-        let pass = NonZeroU32::new(pass.parse::<u32>().unwrap()).unwrap();
+        let max_cycle = NonZeroU32::new(pass.parse::<u32>().unwrap()).unwrap();
 
-        collection.pass(pass)
-    }
-
-    if matches.is_present("default") {
-        collection.random_mode();
-        collection.all_cases_mode();
-        collection.pass(unsafe { NonZeroU32::new_unchecked(2) })
+        asker.max_cycle(max_cycle)
     }
 
     Ok(())
