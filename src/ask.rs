@@ -14,7 +14,6 @@ pub trait Ask {
 
 pub struct AskerBuilder<R: Rng> {
     deck: Deck,
-    deck_index: usize,
     max_cycle: NonZeroU32,
     tries: NonZeroU32,
     flip_mode: FlipMode,
@@ -25,7 +24,6 @@ impl<R: Rng> AskerBuilder<R> {
     #[inline]
     pub fn new(deck: Deck, rng: R) -> Self {
         Self {
-            deck_index: deck.len(),
             deck,
             max_cycle: NonZeroU32::new(1).unwrap(),
             tries: NonZeroU32::new(1).unwrap(),
@@ -51,14 +49,7 @@ impl<R: Rng> AskerBuilder<R> {
 
     #[inline]
     pub fn deck(&mut self, deck: Deck) {
-        self.deck_index = deck.len();
         self.deck = deck;
-
-        match self.flip_mode {
-            FlipMode::Verso => self.deck.flip_all(),
-            FlipMode::Random(_) => self.deck.flip_all(),
-            FlipMode::Recto => (),
-        }
     }
 
     #[inline]
@@ -67,7 +58,16 @@ impl<R: Rng> AskerBuilder<R> {
     }
 
     #[inline]
-    pub fn build(self) -> Asker<R> {
+    pub fn build(mut self) -> Asker<R> {
+
+        match self.flip_mode {
+            FlipMode::Verso => self.deck.flip_all(),
+            FlipMode::Random(_) => self.deck.flip_all(),
+            FlipMode::Recto => (),
+        }
+
+        self.deck.suffle(&mut self.rng);
+
         Asker {
             deck: self.deck,
             all_cases: self.flip_mode.is_all_cases(),
@@ -120,3 +120,28 @@ impl FlipMode {
         }
     }
 }
+
+// #[cfg(test)]
+// mod tests {
+//     use crate::card::Tip;
+
+//     use super::*;
+
+//     #[test]
+//     fn is_it_safe() {
+//         let card = Card::new(
+//             "The best programming language".into(),
+//             "Rust".into(),
+//             Tip::None,
+//         );
+
+//         let deck = Deck::new(vec![card]);
+
+//         let rng = rand::thread_rng();
+//         let collection = Collection::new(deck, rng);
+
+//         let asker = Asker::new(collection, NonZeroU32::new(2).unwrap());
+
+//         asker.run().unwrap();
+//     }
+// }
