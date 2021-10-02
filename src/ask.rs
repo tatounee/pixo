@@ -8,7 +8,8 @@ use std::io::{self, Stdin};
 type AllCases = bool;
 
 pub trait Ask {
-    fn next_question(&mut self) -> &Card;
+    fn advance(&mut self) {}
+    fn get_card(&self) -> &Card;
 }
 
 pub struct AskerBuilder<R: Rng> {
@@ -69,7 +70,6 @@ impl<R: Rng> AskerBuilder<R> {
     pub fn build(self) -> Asker<R> {
         Asker {
             deck: self.deck,
-            deck_index: self.deck_index,
             all_cases: self.flip_mode.is_all_cases(),
             cycle_counter: 0,
             max_cycle: self.max_cycle,
@@ -81,7 +81,6 @@ impl<R: Rng> AskerBuilder<R> {
 
 pub struct Asker<R: Rng> {
     deck: Deck,
-    deck_index: usize,
     all_cases: bool,
     cycle_counter: u32,
     max_cycle: NonZeroU32,
@@ -90,17 +89,34 @@ pub struct Asker<R: Rng> {
 }
 
 impl<R: Rng> Ask for Asker<R> {
-    fn next_question(&mut self) -> &Card {
-        self.deck_index += 1;
-
-        if self.deck_index == self.deck.len() {
-            self.deck_index = 0;
+    fn advance(&mut self) {
+        if self.deck.question_index() + 1 == self.deck.len() {
             self.cycle_counter += 1;
             if self.all_cases {
                 self.deck.flip_all();
             }
         }
+        self.deck.advance();
+    }
 
-        self.deck.next_question()
+    fn get_card(&self) -> &Card {
+        self.deck.get_card()
+    }
+}
+
+
+pub enum FlipMode {
+    Recto,
+    Verso,
+    Random(AllCases),
+}
+
+impl FlipMode {
+    fn is_all_cases(&self) -> bool {
+        if let Self::Random(all_cases) = self {
+            return *all_cases;
+        } else {
+            false
+        }
     }
 }

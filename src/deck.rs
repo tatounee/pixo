@@ -3,8 +3,8 @@ use rand::{
     Rng,
 };
 
-use crate::card::Card;
 use crate::ask::Ask;
+use crate::card::Card;
 
 pub struct Deck {
     cards: Vec<Card>,
@@ -17,6 +17,10 @@ impl Deck {
             cards,
             question_index: 0,
         }
+    }
+
+    pub const fn question_index(&self) -> usize {
+        self.question_index
     }
 
     #[inline]
@@ -56,9 +60,11 @@ impl Deck {
 }
 
 impl Ask for Deck {
-    fn next_question(&mut self) -> &Card {
-        let card = self.cards.get(self.question_index).unwrap();
+    fn advance(&mut self) {
         self.question_index = (self.question_index + 1) % self.cards.len();
-        card
+    }
+
+    fn get_card(&self) -> &Card {
+        self.cards.get(self.question_index).unwrap()
     }
 }

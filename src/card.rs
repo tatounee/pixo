@@ -34,7 +34,7 @@ impl Card {
 }
 
 impl Ask for Card {
-    fn next_question(&mut self) -> &Card {
+    fn get_card(&self) -> &Card {
         self
     }
 }
