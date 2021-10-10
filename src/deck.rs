@@ -29,11 +29,6 @@ impl Deck {
     }
 
     #[inline]
-    pub fn push(&mut self, card: Card) {
-        self.cards.push(card)
-    }
-
-    #[inline]
     pub fn suffle<R: Rng>(&mut self, rng: &mut R) {
         self.cards.shuffle(rng);
     }

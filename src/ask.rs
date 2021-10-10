@@ -7,6 +7,7 @@ use std::io::{self, Stdin};
 
 type AllCases = bool;
 use crate::{card::Card, deck::Deck};
+
 pub use flip_mode::FlipMode;
 
 pub trait Ask {
@@ -49,15 +50,15 @@ impl<R: Rng> AskerBuilder<R> {
         self.flip_mode = verso_mode;
     }
 
-    #[inline]
-    pub fn deck(&mut self, deck: Deck) {
-        self.deck = deck;
-    }
+    // #[inline]
+    // pub fn deck(&mut self, deck: Deck) {
+    //     self.deck = deck;
+    // }
 
-    #[inline]
-    pub fn rng(&mut self, rng: R) {
-        self.rng = rng;
-    }
+    // #[inline]
+    // pub fn rng(&mut self, rng: R) {
+    //     self.rng = rng;
+    // }
 
     #[inline]
     pub fn build(mut self) -> Asker<R> {
