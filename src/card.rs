@@ -10,18 +10,13 @@ pub struct Card {
 }
 
 impl Card {
-    pub const fn new(recto: String, verso: String, tip: Tip) -> Self {
+    pub const fn new(recto: String, verso: String, tip: Tip, only_recto: bool) -> Self {
         Self {
             recto,
             verso,
             tip,
-            only_recto: false,
+            only_recto,
         }
-    }
-
-    #[inline]
-    pub fn only_recto(&mut self, only: bool) {
-        self.only_recto = only
     }
 
     #[inline]
@@ -59,7 +54,7 @@ impl fmt::Display for Tip {
         match self {
             Self::None => f.write_str("Wrong answer."),
             Self::One(tip) => f.write_fmt(format_args!("Tip : {}.", tip)),
-            Self::RectoVerso(tip, _) => f.write_fmt(format_args!("Tip : {}.", tip))
+            Self::RectoVerso(tip, _) => f.write_fmt(format_args!("Tip : {}.", tip)),
         }
     }
 }

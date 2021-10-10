@@ -1,4 +1,4 @@
-use crate::{card::Card, deck::Deck};
+mod flip_mode;
 
 use std::num::NonZeroU32;
 
@@ -6,6 +6,8 @@ use rand::Rng;
 use std::io::{self, Stdin};
 
 type AllCases = bool;
+use crate::{card::Card, deck::Deck};
+pub use flip_mode::FlipMode;
 
 pub trait Ask {
     fn advance(&mut self) {}
@@ -145,18 +147,4 @@ impl<R: Rng> Asker<R> {
     }
 }
 
-pub enum FlipMode {
-    Recto,
-    Verso,
-    Random(AllCases),
-}
-
-impl FlipMode {
-    fn is_all_cases(&self) -> bool {
-        if let Self::Random(all_cases) = self {
-            return *all_cases;
-        } else {
-            false
-        }
-    }
 }

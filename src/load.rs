@@ -3,11 +3,10 @@ use std::{io::BufReader, path::Path};
 use std::fs::File;
 use std::io;
 
-use crate::deck::Deck;
 use crate::card::{Card, Tip};
+use crate::deck::Deck;
 
 use serde::{de::Visitor, Deserialize, Deserializer};
-use serde_json;
 
 pub fn load_data_file(path: &Path) -> Result<DataFile, io::Error> {
     let file = File::open(path)?;
@@ -37,12 +36,12 @@ pub struct DataFile {
 
 impl From<CardJson> for Card {
     fn from(card_json: CardJson) -> Self {
-        Self {
-            recto: card_json.recto,
-            verso: card_json.verso,
-            tip: card_json.tip,
-            only_recto: card_json.tags.contains(&Tag::OnlyRecto),
-        }
+        Self::new(
+            card_json.recto,
+            card_json.verso,
+            card_json.tip,
+            card_json.tags.contains(&Tag::OnlyRecto),
+        )
     }
 }
 
@@ -52,7 +51,7 @@ impl From<DataFile> for Deck {
             data_file
                 .questions
                 .into_iter()
-                .map(|card_json| Card::from(card_json))
+                .map(Card::from)
                 .collect::<Vec<Card>>(),
         )
     }

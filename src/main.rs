@@ -1,9 +1,7 @@
-#![allow(dead_code)]
-
 mod ask;
 mod card;
-mod load;
 mod deck;
+mod load;
 
 use std::error::Error;
 use std::num::NonZeroU32;
@@ -14,7 +12,6 @@ use clap::{crate_authors, crate_version, App, Arg};
 use crate::ask::{AskerBuilder, FlipMode};
 use crate::deck::Deck;
 use crate::load::load_data_file;
-
 
 fn main() -> Result<(), Box<dyn Error>> {
     // Create Clap app
@@ -60,7 +57,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                                     ))
                                 }
                             })
-                            .unwrap_or(Err(format!("Error during getting data in {:?}", path)))
+                            .unwrap_or_else(|_ |Err(format!("Error during getting data in {:?}", path)))
                     } else {
                         Err(format!("The file {:?} does not exist.", path))
                     }
