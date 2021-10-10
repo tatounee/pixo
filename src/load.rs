@@ -23,9 +23,11 @@ pub struct CardJson {
     recto: String,
     #[serde(alias = "answer")]
     verso: String,
+    #[serde(alias = "tips")]
     #[serde(deserialize_with = "tip_to_Tip")]
     #[serde(default = "tip_none")]
     tip: Tip,
+    #[serde(default = "vec_empty")]
     tags: Vec<Tag>,
 }
 
@@ -95,17 +97,18 @@ fn tip_to_Tip<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Tip, D::Erro
         where
             A: serde::de::SeqAccess<'de>,
         {
-            let first = seq.next_element();
-            let second = seq.next_element();
-
-            if let Ok(Some(tip_recto)) = first {
-                if let Ok(Some(tip_verso)) = second {
-                    Ok(Tip::RectoVerso(tip_recto, tip_verso))
+            let tip = Tip::RectoVerso(
+                seq.next_element()?.unwrap_or_default(),
+                seq.next_element()?.unwrap_or_default(),
+            );
+            if let Tip::RectoVerso(string, _) = &tip {
+                if !string.is_empty() {
+                    Ok(tip)
                 } else {
-                    Ok(Tip::One(tip_recto))
+                    Ok(Tip::None)
                 }
             } else {
-                Ok(Tip::None)
+                unreachable!()
             }
         }
     }
@@ -116,4 +119,8 @@ fn tip_to_Tip<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Tip, D::Erro
 
 const fn tip_none() -> Tip {
     Tip::None
+}
+
+const fn vec_empty<T>() -> Vec<T> {
+    Vec::new()
 }
