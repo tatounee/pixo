@@ -5,6 +5,7 @@ mod load;
 
 use std::error::Error;
 use std::num::NonZeroU32;
+use std::process::exit;
 use std::{convert, path::Path};
 
 use clap::{crate_authors, crate_version, App, Arg};
@@ -41,7 +42,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                                         .map(|string| {
                                             string
                                                 .as_str()
-                                                .split(".")
+                                                .split('.')
                                                 .last()
                                                 .map(|extention| extention == "json")
                                         })
@@ -81,18 +82,22 @@ fn main() -> Result<(), Box<dyn Error>> {
                 .long("try")
                 .takes_value(true)
                 .help("Set the numbre of try for each question. 0 means infinity of try.")
-                .default_value("2")
+                .default_value("1")
+                .default_value_if("default", None, "2")
                 .validator(is_number_non_zero),
         )
         .arg(
             Arg::with_name("all_cases")
-                .requires_all(&["random"])
-                .alias("ac"),
+                .help("If random is turned to `true` and you have at lease two passes, then by using `all_cases` you assert that all cards will be present in recto and verso at lease one time.")
+                .requires("random")
+                .alias("ac")
+                .long("all_cases")
         )
         .arg(
             Arg::with_name("pass")
                 .help("Set the nombre of time the deck will be used.")
                 .short("p")
+                .long("pass")
                 .validator(is_number_non_zero)
                 .default_value("1")
                 .default_value_if("default", None, "2"),
@@ -100,6 +105,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         .arg(
             Arg::with_name("default")
                 .short("d")
+                .long("default")
                 .help("Use the default profil")
                 .long_help(
                     "Use the default profil :\nrandom = true\ntry = 2\nall_cases = true\npass = 2\nWARNING : These parametres can be overrided.",
@@ -110,7 +116,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Get data from path given by the user
     let input = Path::new(matches.value_of("card_path").unwrap());
     if input.is_dir() {
-        panic!("Pixo can not read a folder of data files (.json files) yet.")
+        println!("Pixo can not read a folder of data files (.json files) yet.");
+        exit(0)
     }
     let data_file = load_data_file(input)?;
 
@@ -123,6 +130,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         if !matches.is_present("verso") {
             asker.flip_mode(FlipMode::Random(true))
         }
+        asker.tries(NonZeroU32::new(2).unwrap());
         asker.max_cycle(NonZeroU32::new(2).unwrap())
     }
 
@@ -136,6 +144,12 @@ fn main() -> Result<(), Box<dyn Error>> {
         let max_cycle = NonZeroU32::new(pass.parse::<u32>().unwrap()).unwrap();
 
         asker.max_cycle(max_cycle)
+    }
+
+    if let Some(tries) = matches.value_of("try") {
+        let tries = NonZeroU32::new(tries.parse::<u32>().unwrap()).unwrap();
+
+        asker.tries(tries)
     }
 
     // Build and run pixo !
