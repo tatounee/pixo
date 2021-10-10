@@ -52,6 +52,11 @@ impl Deck {
 
         Some(())
     }
+
+    #[inline]
+    pub fn get_card_by_index(&self, index: usize) -> Option<&Card> {
+        self.cards.get(index)
+    }
 }
 
 impl Ask for Deck {
@@ -59,7 +64,10 @@ impl Ask for Deck {
         self.question_index = (self.question_index + 1) % self.cards.len();
     }
 
-    fn get_card(&self) -> &Card {
-        self.cards.get(self.question_index).unwrap()
+    fn get_card(&self) -> (&Card, usize) {
+        (
+            self.cards.get(self.question_index).unwrap(),
+            self.question_index,
+        )
     }
 }

@@ -29,8 +29,8 @@ impl Card {
 }
 
 impl Ask for Card {
-    fn get_card(&self) -> &Card {
-        self
+    fn get_card(&self) -> (&Card, usize) {
+        (self, 0)
     }
 }
 

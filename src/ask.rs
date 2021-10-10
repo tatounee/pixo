@@ -1,18 +1,20 @@
 mod flip_mode;
+mod nulos;
 
+use std::fmt;
 use std::num::NonZeroU32;
 
 use rand::Rng;
 use std::io::{self, Stdin};
 
-type AllCases = bool;
 use crate::{card::Card, deck::Deck};
 
 pub use flip_mode::FlipMode;
+use nulos::Nulos;
 
 pub trait Ask {
     fn advance(&mut self) {}
-    fn get_card(&self) -> &Card;
+    fn get_card(&self) -> (&Card, usize); // Card / id
 }
 
 pub struct AskerBuilder<R: Rng> {
@@ -62,10 +64,9 @@ impl<R: Rng> AskerBuilder<R> {
 
     #[inline]
     pub fn build(mut self) -> Asker<R> {
-
         match self.flip_mode {
             FlipMode::Verso => self.deck.flip_all(),
-            FlipMode::Random(_) => self.deck.flip_all(),
+            FlipMode::Random(_) => self.deck.flip_random(&mut self.rng),
             FlipMode::Recto => (),
         }
 
@@ -73,37 +74,72 @@ impl<R: Rng> AskerBuilder<R> {
 
         Asker {
             deck: self.deck,
+            failed: Nulos::new(),
             all_cases: self.flip_mode.is_all_cases(),
             cycle_counter: 0,
             max_cycle: self.max_cycle,
             tries: self.tries,
+            stat: Stat::New,
             rng: self.rng,
         }
     }
 }
 
+impl<R: Rng> fmt::Debug for AskerBuilder<R> {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        f.debug_struct("AskerBuilder")
+            .field("deck_len", &self.deck.len())
+            .field("max_cycle", &self.max_cycle)
+            .field("tries", &self.tries)
+            .field("flip_mode", &self.flip_mode)
+            .finish_non_exhaustive()
+    }
+}
+
 pub struct Asker<R: Rng> {
     deck: Deck,
+    failed: Nulos,
     all_cases: bool,
     cycle_counter: u32,
     max_cycle: NonZeroU32,
     tries: NonZeroU32,
+    stat: Stat,
     rng: R,
 }
 
 impl<R: Rng> Ask for Asker<R> {
     fn advance(&mut self) {
-        if self.deck.question_index() + 1 == self.deck.len() {
-            self.cycle_counter += 1;
-            if self.all_cases {
-                self.deck.flip_all();
+        if matches!(self.stat, Stat::New) {
+            if self.deck.question_index() + 1 == self.deck.len() {
+                if self.failed.is_empty() {
+                    self.cycle_counter += 1;
+                    self.deck.suffle(&mut self.rng);
+                    if self.all_cases {
+                        self.deck.flip_all();
+                    }
+                    self.deck.advance();
+                } else {
+                    self.stat = Stat::Failed;
+                    self.failed.advance(&mut self.rng);
+                }
+            } else {
+                self.deck.advance()
             }
+        } else if self.failed.is_empty() {
+            self.stat = Stat::New;
+            self.advance();
+        } else {
+            self.failed.advance(&mut self.rng);
         }
-        self.deck.advance();
     }
 
-    fn get_card(&self) -> &Card {
-        self.deck.get_card()
+    fn get_card(&self) -> (&Card, usize) {
+        if matches!(self.stat, Stat::New) {
+            self.deck.get_card()
+        } else {
+            let index = self.failed.get().unwrap();
+            (self.deck.get_card_by_index(index).unwrap(), index)
+        }
     }
 }
 
@@ -119,8 +155,8 @@ impl<R: Rng> Asker<R> {
         Ok(())
     }
 
-    fn ask(&self, stdin: &mut Stdin) -> Result<(), io::Error> {
-        let card = self.get_card();
+    fn ask(&mut self, stdin: &mut Stdin) -> Result<(), io::Error> {
+        let (card, index) = self.get_card();
 
         let mut user_answer = String::new();
         let mut user_tries = 1;
@@ -130,14 +166,18 @@ impl<R: Rng> Asker<R> {
         stdin.read_line(&mut user_answer)?;
 
         loop {
-            if user_answer.trim() == card.verso {
+            if user_answer.trim() == card.verso.trim() {
+                println!();
+                self.failed.remove_value(index);
                 break;
             } else if user_tries == self.tries.get() {
-                println!("Answer : {}", card.verso);
+                println!("Answer : {}\n", card.verso);
+                self.failed.push(index).unwrap();
                 break;
             } else {
                 println!("{}", card.tip);
 
+                user_answer = String::new();
                 stdin.read_line(&mut user_answer)?;
             }
 
@@ -148,4 +188,7 @@ impl<R: Rng> Asker<R> {
     }
 }
 
+enum Stat {
+    New,
+    Failed,
 }
