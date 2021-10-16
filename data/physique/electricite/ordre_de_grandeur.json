@@ -1,0 +1,49 @@
+{
+    "questions": [
+        {
+            "qst": "Seuil de perception",
+            "answer": "0.5 mA",
+            "tip": "Un demi petit"
+        },
+        {
+            "qst": "Seuil letal",
+            "answer": "30 mA, quelque seconds",
+            "tip": "Une demi heurs en seconde"
+        },
+        {
+            "qst": "Activité neuronale",
+            "answer": "1 microA",
+            "tip": "Vraiment petit"
+        },
+        {
+            "qst": "Électronique du signal",
+            "answer": "1 mA",
+            "tip": "Un peu petit"
+        },
+        {
+            "qst": "Port USB",
+            "answer": "1 A",
+            "tip": "Peut te tuer XD"
+        },
+        {
+            "qst": "Électroménager",
+            "answer": "10 A",
+            "tip": "Commence à être pas mal"
+        },
+        {
+            "qst": "Industrie",
+            "answer": "100 A",
+            "tip": "Téma la taille des machines"
+        },
+        {
+            "qst": "TVG",
+            "answer": "1 kA",
+            "tip": "Très lourd"
+        },
+        {
+            "qst": "Éclair d'orage",
+            "answer": "10 kA",
+            "tip": "10 fois plus rapide qu'un train"
+        }
+    ]
+}

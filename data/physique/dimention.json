@@ -1,0 +1,92 @@
+
+{
+    "questions": [
+        {
+            "qst": "Masse",
+            "answer": "M, kg",
+            "tip": "La première lettre (dim+unité)"
+        },
+        {
+            "qst": "Temps",
+            "answer": "T, s",
+            "tip": "La première lettre (dim+unité)"
+        },
+        {
+            "qst": "Longueur",
+            "answer": "L, m",
+            "tip": "La première lettre (dim+unité)"
+        },
+        {
+            "qst": "Quantité de matière",
+            "answer": "N, mol",
+            "tip": "La première lettre (dim+unité)"
+        },
+        {
+            "qst": "Intensité lumineuse",
+            "answer": "J, cd",
+            "tip": "Comme l'énergie (dim+unité)"
+        },
+        {
+            "qst": "Température",
+            "answer": "Teta, K",
+            "tip": "Lettre grec (dim+unité)"
+        },
+        {
+            "qst": "Intensité électrique",
+            "answer": "I, A",
+            "tip": "La première lettre  (dim+unité)"
+        },
+
+
+        {
+            "qst": "Charge",
+            "answer": "T I",
+            "tip": "titi"
+        },
+        {
+            "qst": "Énergie",
+            "answer": "M L2 T-2",
+            "tip": "½mv²"
+        },
+        {
+            "qst": "Tension",
+            "answer": "M L2 T-3 I-1",
+            "tip": "E/charge"
+        },
+        {
+            "qst": "Résistance",
+            "answer": "M L2 T-3 I-2",
+            "tip": "u/i"
+        },
+        {
+            "qst": "Puissance",
+            "answer": "M L2 T-3",
+            "tip": "u⋅i"
+        },
+        {
+            "qst": "Capacité",
+            "answer": "M-1 L-2 T4 I2",
+            "tip": "Ω-1⋅T"
+        },
+        {
+            "qst": "Inductance",
+            "answer": "M L2 T-2 I-2",
+            "tip": "Ω⋅T"
+        },
+        {
+            "qst": "Fréquence",
+            "answer": "T-1",
+            "tip": "Par rapport au temps"
+        },
+        {
+            "qst": "Force",
+            "answer": "M L T-2",
+            "tip": "m / a ou E / L"
+        },
+        {
+            "qst": "Pression",
+            "answer": "M L-1 T-2",
+            "tip": "F/surface"
+        }
+    ]
+}

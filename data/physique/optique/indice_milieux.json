@@ -1,0 +1,30 @@
+
+{
+    "questions": [
+        {
+            "qst": "Vide",
+            "answer": "1",
+            "tip": "n = c/v"
+        },
+        {
+            "qst": "Air",
+            "answer": "1.0003",
+            "tip": "Presque 1 (3)"
+        },
+        {
+            "qst": "Eau",
+            "answer": "1.33",
+            "tip": "Encore des 3"
+        },
+        {
+            "qst": "Verre",
+            "answer": "1.5",
+            "tip": "Plutôt rond"
+        },
+        {
+            "qst": "Diamant",
+            "answer": "2.42",
+            "tip": "La réponce à l'univers"
+        }
+    ]
+}

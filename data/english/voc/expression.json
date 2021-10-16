@@ -1,0 +1,29 @@
+{
+    "questions": [
+        {
+            "qst": "Don't hold water",
+            "answer": "Ne tiens pas la route",
+            "tip": "TENIR"
+        },
+        {
+            "qst": "Slippery slope",
+            "answer": "Pente glissante",
+            "tip": "Dortoire encorder par l'ISR"
+        },
+        {
+            "qst": "To shoot for the moon",
+            "answer": "Viser très haut",
+            "tip": "Un truc très haut dans le ciel"
+        },
+        {
+            "qst": "To be over the moon",
+            "answer": "Etre aux anges",
+            "tip": "Dieu habite au desssu de la Lune"
+        },
+        {
+            "qst": "Once in a blue moon",
+            "answer": "Tous les 36 du mois",
+            "tip": "Rare comme une \"double lune\""
+        }
+    ]
+}

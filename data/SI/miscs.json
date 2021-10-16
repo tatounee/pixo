@@ -1,0 +1,35 @@
+
+{
+    "questions": [
+        {
+            "qst": "Système",
+            "answer": "Ensemble de pièce structuré",
+            "tip": "Un paquet"
+        },
+        {
+            "qst": "Fonction d'un objet",
+            "answer": "But de l'objet",
+            "tip": "PAS sont action"
+        },
+        {
+            "qst": "Forme de matière d'oeuvre (MO)",
+            "answer": "Matière Information Energie",
+            "tip": "3 formes"
+        },
+        {
+            "qst": "Def : Cycle de vie",
+            "answer": "Différentes étapes de la vie d'un système",
+            "tip": "Énumération"
+        },
+        {
+            "qst": "Écart et performance durant la conception d'un système",
+            "answer": "Performances attendues, performances mesurées, performances simulées",
+            "tip": "3 performances"
+        },
+        {
+            "qst": "Analyse fonctionnelle",
+            "answer": "Déscription du besoin auquel le système répond et ses contraintes",
+            "tip": "Déscription"
+        }
+    ]
+}

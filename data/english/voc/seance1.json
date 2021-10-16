@@ -1,0 +1,81 @@
+{
+    "questions": [
+        {
+            "qst": "Comparason",
+            "answer": "Comparaison",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "Civil servant",
+            "answer": "Fonctionnaire",
+            "tip": "Esclave"
+        },
+        {
+            "qst": "Tyranny",
+            "answer": "Tyrannie",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "Dictator ship",
+            "answer": "Dictature",
+            "tip": "Le capitain autoritaire"
+        },
+        {
+            "qst": "Vitriolic",
+            "answer": "Vitriolique",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "To air",
+            "answer": "Diffuser (TV)",
+            "tip": "Le son se propage dans l'air"
+        },
+        {
+            "qst": "Demonstration",
+            "answer": "Manifestation",
+            "tip": "Demontrer ta colère"
+        },
+        {
+            "qst": "Jab",
+            "answer": "Piqûre",
+            "tip": "Se prendre un jab ça fait mal"
+        },
+        {
+            "qst": "FDA",
+            "answer": "Food and Drug Administration",
+            "tip": "En fda on fabique de la DROGUE"
+        },
+        {
+            "qst": "To muddle",
+            "answer": "Embrouiller",
+            "tip": "Modeler par un gogol"
+        }
+
+        ,
+        {
+            "qst": "Perhaps",
+            "answer": "Peut-être",
+            "tip": "Pet aps"
+        },
+        {
+            "qst": "Provocative",
+            "answer": "Provocateur",
+            "tip": "Transpanrent"
+        },
+        {
+            "qst": "To implement",
+            "answer": "Mettre en oeuvre",
+            "tip": "RUST !!"
+        },
+        {
+            "qst": "Down played",
+            "answer": "Minimisé",
+            "tip": "Joueur de bas niveau"
+        },
+        {
+            "qst": "Bleach",
+            "answer": "Javel",
+            "tip": "Aussi toxique"
+        }
+    ]
+}

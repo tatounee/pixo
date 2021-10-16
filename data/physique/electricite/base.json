@@ -1,0 +1,89 @@
+{
+    "questions": [
+        {
+            "qst" : "Dipôle",
+            "answer": "Composant électrique possédant deux bornes",
+            "tip": "On parle de borne"
+        },
+        {
+            "qst" : "Branche",
+            "answer": "Ensemble de dipôles montés en séries",
+            "tip": "Une partie en série"
+        },
+        {
+            "qst" : "Maille",
+            "answer": "Ensemble de branches formant une boucle fermée",
+            "tip": "Ronde comme une cotte de mailles"
+        },
+        {
+            "qst" : "Noeud",
+            "answer": "Point reliant au moins deux dipôles",
+            "tip": "Min 2"
+        },
+        {
+            "qst" : "Monté en dérivation",
+            "answer": "Dipôles branchés sur les mêmes noeuds",
+            "tip": "Noeud"
+        },
+        {
+            "qst" : "Courrant à l'échelle microsopique",
+            "answer": "Déplacement d'électrons",
+            "tip": "Qu'est-ce qui est petit et qui possède une charge ?"
+        },
+        {
+            "qst" : "Mouvement Brownien",
+            "answer": "Mouvement aléatoire des électrons au sein d'un conducteur",
+            "tip": "Comme les nano bots"
+        },
+        {
+            "qst" : "Courrant électrique",
+            "answer": "Mouvement commun de tous les électrons au sein d'un conducteur",
+            "tip": "Mouvement commun"
+        },
+        {
+            "qst" : "Sens du courant conventionnel",
+            "answer": "Sens de déplacement des charges positives",
+            "tip": "Déplacement.."
+        },
+        {
+            "qst" : "Intensité du courant (def)",
+            "answer": "Débit de charges électriques au travers d'une section d'un conducteur",
+            "tip": "Un nombre de trucs qui se déplacent (idiot va)"
+        },
+        {
+            "qst" : "Intensité du courant (formule)",
+            "answer": "I = delta Q / delta t",
+            "tip": "Pense à la def.."
+        },
+        {
+            "qst" : "Comptage de delta Q",
+            "answer": "On compte positivement les charges positives",
+            "tip": "Très positif"
+        },
+        {
+            "qst" : "Intensité i",
+            "answer": "i = d Q / d t",
+            "tip": "Une dérivée"
+        },
+        {
+            "qst" : "Loi des noeuds",
+            "answer": "La somme des intensités entrantes est la somme des intensités sortantes",
+            "tip": "Ça s'en va et ça revient.."
+        },
+        {
+            "qst" : "Potentiel électrique",
+            "answer": "Déséquilibre de charges électriques (volt)",
+            "tip": "Pas stable + (unité)"
+        },
+        {
+            "qst" : "Tension électrique",
+            "answer": "Différence de potentiel électrique aux bornes d'un dipôle",
+            "tip": "C'est une différence"
+        },
+        {
+            "qst" : "Loi d'additivité des tension",
+            "answer": "Uac = Uab + Ubc",
+            "tip": "Comme les vecteurs"
+        }
+    ]
+}

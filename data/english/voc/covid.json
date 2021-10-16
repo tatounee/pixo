@@ -1,0 +1,111 @@
+{
+    "questions": [
+        {
+            "qst": "Epidemic",
+            "answer": "Epidemie",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "Pandemic",
+            "answer": "Pandemie",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "Intensive care units",
+            "answer": "Services de réanimation",
+            "tip": "Intense"
+        },
+        {
+            "qst": "Healthcare system",
+            "answer": "Système de santé",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "To be overwhelmed",
+            "answer": "Etre saturé",
+            "tip": "Sur.."
+        },
+        {
+            "qst": "Number of excess deaths",
+            "answer": "Surmortalité",
+            "tip": "En trop.."
+        },
+        {
+            "qst": "Frontline workers",
+            "answer": "Travailleurs en première ligne",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "Key workers",
+            "answer": "Travailleurs essentiels",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "Lockdown",
+            "answer": "Confinement",
+            "tip": "Concé"
+        },
+        {
+            "qst": "Exiting lockdown measures",
+            "answer": "Déconfinement",
+            "tip": "Sortir"
+        },
+        {
+            "qst": "Quarantine",
+            "answer": "Quarantaine",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "Preventive measures",
+            "answer": "Gestes barrières",
+            "tip": "Prévention"
+        },
+
+        {
+            "qst": "Herd immunity",
+            "answer": "Immunité de groupe",
+            "tip": "L'inverse du Nerd"
+        },
+        {
+            "qst": "Furlough",
+            "answer": "Chômage partiel",
+            "tip": "La fourure de loup ça rapport pas beaucoup"
+        },
+        {
+            "qst": "Nursing home",
+            "answer": "EHPAD",
+            "tip": "Avec des infirmière"
+        },
+        {
+            "qst": "Hand sanitizer",
+            "answer": "Gel hydroalcoolique",
+            "tip": "Sanitaire"
+        },
+        {
+            "qst": "To stockpile",
+            "answer": "Faire des stocks",
+            "tip": "Une pile de PQ"
+        },
+        {
+            "qst": "Overcrowed",
+            "answer": "Bondé",
+            "tip": "Avec une couronne"
+        },
+
+        {
+            "qst": "Libertarian",
+            "answer": "Libertaire",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "U-turn",
+            "answer": "Revirement",
+            "tip": "Comme un U"
+        },
+        {
+            "qst": "Remote learning",
+            "answer": "Enseignement à distance",
+            "tip": "MAM"
+        }
+    ]
+}

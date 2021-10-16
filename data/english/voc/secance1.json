@@ -1,0 +1,157 @@
+{
+    "questions": [
+        {
+            "recto": "Under study",
+            "verso": "A l'étude",
+            "tip": "Sous étude"
+        },
+        {
+            "recto": "Articles",
+            "verso": "Des articles",
+            "tip": "Transparent"
+        },
+        {
+            "recto": "Political cartoon",
+            "verso": "Caricature politique",
+            "tips": [
+                "Un 'cartoon' c'est ..",
+                "Une 'caricature' c'est .."
+            ]
+        },
+        {
+            "recto": "As suggested by",
+            "verso": "Comme suggéré par",
+            "tip": "MaM"
+        },
+        {
+            "recto": "Staunchly opposed",
+            "verso": "Fermement opposé",
+            "tips": [
+                "On t'assome avec détermination",
+                "Tu ferme la porte sur sa gueule et tu l'assome"
+            ]
+        },
+        {
+            "recto": "Calm and collected appearance",
+            "verso": "Apparence calme et posée",
+            "tip": "MaM"
+        },
+        {
+            "recto": "Depicted as",
+            "verso": "Dépeint comme",
+            "tip": "Picture"
+        },
+        {
+            "recto": "En effet",
+            "verso": "Indeed"
+        },
+        {
+            "recto": "Therefor",
+            "verso": "Ainsi",
+            "tips": "il y a 1... + structure de flow controle"
+        },
+        {
+            "recto": "Provided",
+            "verso": "Fourni",
+            "tip": "Donner du travaille de pro"
+        },
+        {
+            "recto": "A concern expressed by",
+            "verso": "Une inquiétude exprimée par",
+            "tip": "MaM"
+        },
+        {
+            "recto": "Thus",
+            "verso": "Ainsi",
+            "tip": "sus"
+        },
+        {
+            "recto": "Are portrayed in the cartoon as being",
+            "verso": "Sont dépeint dans la BD comme étant",
+            "tip": "MaM"
+        },
+        {
+            "recto": "However",
+            "verso": "Cependant"
+        },
+        {
+            "recto": "According to",
+            "verso": "Selon",
+            "tips": [
+                "C'est accordé",
+                ""
+            ]
+        },
+        {
+            "recto": "Is reminiscent of",
+            "verso": "Rappelle",
+            "tip": "Une image rémanente"
+        },
+        {
+            "recto": "Point out",
+            "verso": "Souligner",
+            "tips": [
+                "Mettre en valeur (avec un stabilo)",
+                "Monter du doight"
+            ]
+        },
+        {
+            "recto": "Yet",
+            "verso": "Cependant",
+            "tip": "En début de phrase"
+        },
+        {
+            "recto": "Widening",
+            "verso": "Acroitre",
+            "tip": "Une bête libre agrandie sont territoire"
+        },
+        {
+            "recto": "Contrary to",
+            "verso": "Contrairement à",
+            "tip": "MaM"
+        },
+        {
+            "recto": "Trumpist-looking",
+            "verso": "D'apparence pro-Trump",
+            "tips": [
+                "Il ressemble à Trump",
+                "Il est pour Trump"
+            ]
+        },
+        {
+            "recto": "Assert",
+            "verso": "Affirmer",
+            "tips": [
+                "",
+                "Programmation"
+            ]
+        },
+        {
+            "recto": "Historiacly",
+            "verso": "Historiquement",
+            "tip": "Transparent"
+        },
+        {
+            "recto": "Much ado about something",
+            "verso": "Beaucoup de bruit pour",
+            "tip": "Un ados c'est bruillant"
+        },
+        {
+            "recto": "Perhaps",
+            "verso": "Peut-être",
+            "tips": [
+                "",
+                "peut-être que 'père has'"
+            ]
+        },
+        {
+            "recto": "Instead",
+            "verso": "A la place"
+        },
+        {
+            "recto": "Paraphrased",
+            "verso": "Paraphrasé",
+            "tip": "Transparent"
+        }
+    ]
+}

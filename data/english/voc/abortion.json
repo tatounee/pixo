@@ -1,0 +1,319 @@
+{
+    "questions": [
+        {
+            "recto": "To become pregnant",
+            "verso": "Tomber enceinte",
+            "tips": ""
+        },
+        {
+            "recto": "To be 6 weeks pregnant",
+            "verso": "Etre enceinte de 6 semaine",
+            "tips": ""
+        },
+        {
+            "recto": "To have an ultrasound",
+            "verso": "Faire une échographie",
+            "tips": ""
+        },
+        {
+            "recto": "Pregnancy",
+            "verso": "La grossesse",
+            "tips": ""
+        },
+        {
+            "recto": "Teenage pregnancy",
+            "verso": "Les adolescentes enceintes",
+            "tips": ""
+        },
+        {
+            "recto": "A pregnancy test",
+            "verso": "Un test de grossesse",
+            "tips": ""
+        },
+        {
+            "recto": "Of childbearing age",
+            "verso": "En age de procréer",
+            "tips": ""
+        },
+        {
+            "recto": "Womb, uterus",
+            "verso": "L'utérus",
+            "tips": ""
+        },
+        {
+            "recto": "Motherhood",
+            "verso": "La maternité",
+            "tips": ""
+        },
+        {
+            "recto": "Women's reproductive rights",
+            "verso": "Droits des femmes en matière de reporduction",
+            "tips": ""
+        },
+        {
+            "recto": "An embryo",
+            "verso": "Un embryon",
+            "tips": ""
+        },
+        {
+            "recto": "A foetus",
+            "verso": "Un foetus",
+            "tips": ""
+        },
+        {
+            "recto": "An abortion",
+            "verso": "Un avortement",
+            "tips": ""
+        },
+        {
+            "recto": "A termination",
+            "verso": "Une IVG",
+            "tips": ""
+        },
+        {
+            "recto": "A late abortion",
+            "verso": "Un avortement tardif",
+            "tips": ""
+        },
+        {
+            "recto": "To have an abortion",
+            "verso": "Avorter",
+            "tips": ""
+        },
+        {
+            "recto": "To abort an unwanted baby",
+            "verso": "Avorter d'un bébé non désiré",
+            "tips": ""
+        },
+        {
+            "recto": "To terminate a pregnancy",
+            "verso": "Pratiquer une IVG",
+            "tips": ""
+        },
+        {
+            "recto": "An abortion clinic",
+            "verso": "Une clinique pratiquant l'avortement",
+            "tips": ""
+        },
+        {
+            "recto": "To carry out abortion",
+            "verso": "Pratiquer l'avortement",
+            "tips": ""
+        },
+        {
+            "recto": "To induce an abortion",
+            "verso": "Provoquer un avortement",
+            "tips": ""
+        },
+        {
+            "recto": "Self-indected abortion",
+            "verso": "Avortement que l'on a provoqué soi-même",
+            "tips": ""
+        },
+        {
+            "recto": "Backstreet abortion",
+            "verso": "Avortement clandestin",
+            "tips": ""
+        },
+        {
+            "recto": "An abortionist",
+            "verso": "Un avorteur",
+            "tips": ""
+        },
+        {
+            "recto": "A martenity hostpital",
+            "verso": "Une maternité",
+            "tips": ""
+        },
+        {
+            "recto": "A gynecologist",
+            "verso": "Un gynécologue",
+            "tips": ""
+        },
+        {
+            "recto": "A midwife",
+            "verso": "Une sage-femme",
+            "tips": ""
+        },
+        {
+            "recto": "To go on maternity leave",
+            "verso": "Partir en congé maternité",
+            "tips": ""
+        },
+        {
+            "recto": "Parental leave",
+            "verso": "Congé parental",
+            "tips": ""
+        },
+        {
+            "recto": "A birth",
+            "verso": "Une naissance",
+            "tips": ""
+        },
+        {
+            "recto": "The birth rate",
+            "verso": "Le taux de natalité",
+            "tips": ""
+        },
+        {
+            "recto": "To give birth a girl/boy",
+            "verso": "Achoucher d'une fille/garçon",
+            "tips": ""
+        },
+        {
+            "recto": "A premature baby",
+            "verso": "Un prématuré",
+            "tips": ""
+        },
+        {
+            "recto": "An incubator",
+            "verso": "Une couveuse",
+            "tips": ""
+        },
+        {
+            "recto": "To have a miscarriage",
+            "verso": "Faire une fausse couche",
+            "tips": ""
+        },
+        {
+            "recto": "To die in childbirth",
+            "verso": "Mourir en couche",
+            "tips": ""
+        },
+        {
+            "recto": "A stillborn baby",
+            "verso": "Un bébé mort-né",
+            "tips": ""
+        },
+        {
+            "recto": "Infanticide",
+            "verso": "Un infanticide",
+            "tips": ""
+        },
+        {
+            "recto": "A midwife",
+            "verso": "Une sage-femme",
+            "tips": ""
+        },
+        {
+            "recto": "A means of contraception",
+            "verso": "Un moyen de contraception",
+            "tips": ""
+        },
+        {
+            "recto": "Birth control",
+            "verso": "Le contrôle des naissances",
+            "tips": ""
+        },
+        {
+            "recto": "Family planning",
+            "verso": "Le planning familial",
+            "tips": ""
+        },
+        {
+            "recto": "The pill",
+            "verso": "La pilule",
+            "tips": ""
+        },
+        {
+            "recto": "The morning-after pill",
+            "verso": "La pilule du lendemain",
+            "tips": ""
+        },
+        {
+            "recto": "To be on the pill",
+            "verso": "Prendre la pilule",
+            "tips": ""
+        },
+        {
+            "recto": "A contraceptive",
+            "verso": "Un contraceptif",
+            "tips": ""
+        },
+        {
+            "recto": "Vasectomy",
+            "verso": "La vasectomie",
+            "tips": ""
+        },
+        {
+            "recto": "A condom",
+            "verso": "Un preservatif",
+            "tips": ""
+        },
+        {
+            "recto": "A coil",
+            "verso": "Un stérilet",
+            "tips": ""
+        },
+        {
+            "recto": "Rape",
+            "verso": "Le viol",
+            "tips": ""
+        },
+        {
+            "recto": "Incest",
+            "verso": "L'inceste",
+            "tips": ""
+        },
+        {
+            "recto": "A controversy",
+            "verso": "Une polémique",
+            "tips": ""
+        },
+        {
+            "recto": "A controvesial issue",
+            "verso": "Un problème controversé",
+            "tips": ""
+        },
+        {
+            "recto": "Abortion is a divisive issue",
+            "verso": "L'avortement divise l'opinion",
+            "tips": ""
+        },
+        {
+            "recto": "The public are split",
+            "verso": "L'opinion est divisé",
+            "tips": ""
+        },
+        {
+            "recto": "A hot-button issue",
+            "verso": "Un problème sensible",
+            "tips": ""
+        },
+        {
+            "recto": "The pro-life lobby",
+            "verso": "Le lobby des opposants à l'avortement",
+            "tips": ""
+        },
+        {
+            "recto": "A pro-life campaigner",
+            "verso": "Un militant contre l'avortement",
+            "tips": ""
+        },
+        {
+            "recto": "To oppose abortion",
+            "verso": "Etre opposé à l'avortement",
+            "tips": ""
+        },
+        {
+            "recto": "A pro-choice activist",
+            "verso": "Un militant pour le droit à l'avortement",
+            "tips": ""
+        },
+        {
+            "recto": "To be pro-choice",
+            "verso": "Etre en faveur de l'avortement",
+            "tips": ""
+        },
+        {
+            "recto": "To legalise abortion",
+            "verso": "Légaliser l'avortement",
+            "tips": ""
+        },
+        {
+            "recto": "To ban abortion",
+            "verso": "Interdir l'avortement",
+            "tips": ""
+        }
+    ]
+}

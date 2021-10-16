@@ -1,0 +1,72 @@
+
+{
+    "questions": [
+        {
+            "qst": "Vitesse de la lumière dans le vide (c)",
+            "answer": "3.00*10^8 m/s",
+            "tip": "Presque un milliard"
+        },
+        {
+            "qst": "Longueurs d'onde visibles",
+            "answer": "380 780",
+            "tip": "-20"
+        },
+        {
+            "qst": "Model pour simplifier les sources de lumière réel",
+            "answer": "source ponctuelle monochromatique SPM",
+            "tip": "point, unique (+sigle)"
+        },
+        {
+            "qst": "Signification du sigle : milieux \"LHI\"",
+            "answer": "Linéaire Homogène Isotrope",
+            "tip": "Une droite qui augmente partout, dans toutes les directions"
+        },
+        {
+            "qst": "Formulle de la vitesse dans un milieu LHI",
+            "answer": "v = lambda mu",
+            "tip": "vitesse, Lgr d'onde, fréq"
+        },
+        {
+            "qst": "Formule de l'indice optique",
+            "answer": "n = c/v",
+            "tip": "n > 1"
+        },
+
+
+        {
+            "qst": "Rayon lumineux",
+            "answer": "Trajectoire de l'énergie lumineuse entre deux points",
+            "tip": "Comme un segment"
+        },
+        {
+            "qst": "Dioptre",
+            "answer": "Interface entre deux milieux d'indice différent",
+            "tip": "Séparation"
+        },
+        {
+            "qst": "Milieu dont l'indice est supérieur",
+            "answer": "Réfringent",
+            "tip": "Pour le refroidir un faut un réfrigérateur"
+        },
+        {
+            "qst": "1er loi de Snell-Descartes",
+            "answer": "Rayon d'incidence et normal définissent le plan d'incidence. Rayons réfléchi et réfractaire sont dedans",
+            "tip": "Plan"
+        },
+        {
+            "qst": "2e loi de Snell-Descartes",
+            "answer": "i1 = -r",
+            "tip": "Réflexion"
+        },
+        {
+            "qst": "3e loi de Snell-Descartes",
+            "answer": "n1 sin i1 = n2 sin i2",
+            "tip": "Réfraction"
+        },
+        {
+            "qst": "n1 > n2",
+            "answer": "Possible réflexion totale",
+            "tip": "rebond"
+        }
+    ]
+}

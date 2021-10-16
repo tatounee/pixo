@@ -1,0 +1,119 @@
+{
+    "questions": [
+        {
+            "qst": "A shuttle",
+            "answer": "Une navette",
+            "tip": "Pat et le train"
+        },
+        {
+            "qst": "Outer space",
+            "answer": "L'espace",
+            "tip": "A l'exterieur"
+        },
+        {
+            "qst": "A space buff",
+            "answer": "Un fan de l'espace",
+            "tip": "Comme buffy et les vampire mais pour l'espace"
+        },
+        {
+            "qst": "The conquest of space",
+            "answer": "La conquête de l'espace",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "A space flight",
+            "answer": "Un vol dans l'espace",
+            "tip": "MaM"
+        },
+        {
+            "qst": "Avionics",
+            "answer": "L'avionique",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "Airspace",
+            "answer": "L'espace aérient",
+            "tip": "Transprent"
+        },
+        {
+            "qst": "A mammed flight",
+            "answer": "Un vol habité",
+            "tip": "Avec un homme"
+        },
+        {
+            "qst": "A crew",
+            "answer": "Un équipage",
+            "tip": "THE team"
+        },
+        {
+            "qst": "A telescope",
+            "answer": "Un télescope",
+            "tip": "Transparent"
+        },
+        {
+            "qst": "A spacecraft",
+            "answer": "Un vaisseau spacial",
+            "tip": "Comme un spaceship"
+        },
+        {
+            "qst": "A lander",
+            "answer": "Un véhicule spacial",
+            "tip": "Après avoir ATTÉRIE, il faut pouvoir se déplacer"
+        },
+        {
+            "qst": "To blast off",
+            "answer": "Etre mis à feu",
+            "tip": "Un boule de .."
+        },
+        {
+            "qst": "A launch pad",
+            "answer": "Une rampe de lancement",
+            "tip": "~ MaM"
+        },
+        {
+            "qst": "The countdown",
+            "answer": "Le compte à rebours",
+            "tip": "This the final .."
+        },
+        {
+            "qst": "Lift-off",
+            "answer": "L'envol",
+            "tip": "L'assenceur qui monte"
+        },
+        {
+            "qst": "To propel",
+            "answer": "Propulser",
+            "tip": "~ Transparent"
+        },
+        {
+            "qst": "An airlock",
+            "answer": "Un sas",
+            "tip": "Bloque l'air.."
+        },
+        {
+            "qst": "Remote-controled",
+            "answer": "Télécommandé",
+            "tip": "Avec une télécommande"
+        },
+        {
+            "qst": "The touchdown",
+            "answer": "L'atterrissage",
+            "tip": "Toucher le fond"
+        },
+        {
+            "qst": "Weightlessness",
+            "answer": "L'apesanteur",
+            "tip": "Sans poid .."
+        },
+        {
+            "qst": "The space science",
+            "answer": "La spaciologie",
+            "tip": "~ MaM / Transparent"
+        },
+        {
+            "qst": "A spin-off",
+            "answer": "Une retombée",
+            "tip": "La hype redessant après une mauvaise suite"
+        }
+    ]
+}

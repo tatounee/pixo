@@ -1,0 +1,188 @@
+{
+    "questions": [
+        {
+            "qst": "Miroir plan",
+            "answer": "Surface plan réfléchissant toute la lumière",
+            "tip": "Un miroir quoi.."
+        },
+        {
+            "qst": "Système optique",
+            "answer": "Ensemble d'éléments optiques modifiant la trajectoire de rayons lumineux",
+            "tip": "\"Système (SI)\" + optique"
+        },
+        {
+            "qst": "Système optique \"centré\"",
+            "answer": "Système optique dont tous ces éléments ont le même axe de symétrie",
+            "tip": "... centré ou axiale ?"
+        },
+        {
+            "qst": "Objet",
+            "answer": "Ensemble de point émettant de la lumière",
+            "tip": "Plutôt rond"
+        },
+        {
+            "qst": "Type d'objet",
+            "answer": "Réel : avant le système optique. Virtuel : après le système optique",
+            "tip": "Vrai / Faux"
+        },
+        {
+            "qst": "Image",
+            "answer": "Zone de l'espace où convergent les rayons lumineux",
+            "tip": "C'est une zone"
+        },
+        {
+            "qst": "Type d'image",
+            "answer": "Réel : après le système optique. Virtuelle : avant le système optique",
+            "tip": "Vrai / Faux"
+        },
+        {
+            "qst": "Système dont l'image d'un point est un point",
+            "answer": "Stygmatique",
+            "tip": "Lunette de vue"
+        },
+        {
+            "qst": "Système dont l'image d'un plan ⊥ à l'axe optique et un plan ⊥ à l'axe optique",
+            "answer": "Aplanétique",
+            "tip": "Comme si ça l'aplatissait"
+        },
+        {
+            "qst": "Lentille",
+            "answer": "Milieu transparent délimité par deux dioptres",
+            "tip": "|)"
+        },
+        {
+            "qst": "Point \"O\"",
+            "answer": "Centre optique",
+            "tip": "O comme 0",
+            "tags": [
+                "only_recto"
+            ]
+        },
+        {
+            "qst": "Point \"F\"",
+            "answer": "Foyer objet",
+            "tip": "F comme .."
+        },
+        {
+            "qst": "Point \" F' \"",
+            "answer": "Foyer image",
+            "tip": "F' comme .."
+        },
+        {
+            "qst": "Caractérisation d'une lentique",
+            "answer": "Distance focal f' = OF'",
+            "tip": "Les foyers"
+        },
+        {
+            "qst": "OF' > 0",
+            "answer": "Lentille convergente",
+            "tip": "C'est une grandeur algérique"
+        },
+        {
+            "qst": "OF' < 0",
+            "answer": "Lentille divergente",
+            "tip": "C'est une grandeur algérique"
+        },
+        {
+            "qst": "Vergence (unité)",
+            "answer": "dioptrie (delta)",
+            "tip": "~ dioptre + (lettre grec)"
+        },
+        {
+            "qst": "Vergence (formule)",
+            "answer": "v = 1 / f'",
+            "tip": "Comme la fréquence et la prériode"
+        },
+        {
+            "qst": "Grandissement d'une lentille",
+            "answer": "gamma = A'B' / AB",
+            "tip": "Distance sur une autre"
+        },
+        {
+            "qst": "Objet à l'infini",
+            "answer": "Image dans le plan focal image",
+            "tip": "Ça rend bien"
+        },
+        {
+            "qst": "Objet dans le plan focal image",
+            "answer": "Image à l'infini",
+            "tip": "Ça rend bien"
+        },
+        {
+            "qst": "Relation de conjugaison de Descarts (f)",
+            "answer": "1 / OA' - 1 / OA = 1 / OF' = 1 / f' (distances algébriques)",
+            "tip": "1 / truc ... + (distances ...)"
+        },
+        {
+            "qst": "Relation de conjugaison de Newton (f)",
+            "answer": "F'A' * FA = -(f')² (distances algébriques)",
+            "tip": "FA FA ffff + (distances ...)"
+        },
+
+        {
+            "qst": "Relation de conjugaison de Newton (gamma)",
+            "answer": "gamma = A'B' / AB = - F'A' / f'",
+            "tip": "Avec la vergence"
+        },
+        {
+            "qst": "Relation de conjugaison de Descarts (gamma)",
+            "answer": "gamma = A'B' / AB = OA' / OA",
+            "tip": "Par rapport au centre optique"
+        },
+        {
+            "qst": "Schémat de l'oeuil",
+            "answer": "PR PP diaphragme (iris) lentille convergente (cristalin) capteur plan (rétine)",
+            "tip": "les p p, 3 éléments"
+        },
+        {
+            "qst": "Punctum remotum",
+            "answer": "Point le plus éloigné dont l'oeuil peut former une image nette",
+            "tip": "Image nette"
+        },
+        {
+            "qst": "PR",
+            "answer": "infini",
+            "tip": "Genre loin"
+        },
+        {
+            "qst": "Punctum proximum",
+            "answer": "Point le plus proche dont l'oeuil peut former une image nette",
+            "tip": "Image nette"
+        },
+        {
+            "qst": "PP",
+            "answer": "25 cm",
+            "tip": "1 / 4"
+        },
+        {
+            "qst": "Limite de résolution angulaire (def)",
+            "answer": "Plus petit angle séparant deux objets distingables",
+            "tip": "Objet résolut"
+        },
+        {
+            "qst": "Limite de résolution angulaire (val)",
+            "answer": "1' = 1° / 60 = 3.10-4 rad",
+            "tip": "PI"
+        },
+        {
+            "qst": "Taille apparente/angulaire",
+            "answer": "Angle sous lequel on voit un objet",
+            "tip": "Grossissement de la lentille"
+        },
+        {
+            "qst": "Élement d'une lunette astronomique",
+            "answer": "Deux lentille convergentes. Objectif de grande distance focal. Oculaire de petite distance focal",
+            "tip": "2 truc, et leur nom"
+        },
+        {
+            "qst": "Système afocal",
+            "answer": "Foyer image et foyer objet confondu. F'1 = F2",
+            "tip": "... + égalité"
+        },
+        {
+            "qst": "Grossissement",
+            "answer": "G = alpha' / alpha",
+            "tip": "Il faut un grand angle angulaire pour voir un gros"
+        }
+    ]
+}
