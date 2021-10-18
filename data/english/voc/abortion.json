@@ -3,147 +3,165 @@
         {
             "recto": "To become pregnant",
             "verso": "Tomber enceinte",
-            "tips": ""
+            "tips": "tomber, devenir"
         },
         {
             "recto": "To be 6 weeks pregnant",
-            "verso": "Etre enceinte de 6 semaine",
-            "tips": ""
+            "verso": "Etre enceinte de 6 semaines",
+            "tips": "MaM"
         },
         {
             "recto": "To have an ultrasound",
             "verso": "Faire une échographie",
-            "tips": ""
+            "tips": [
+                "Faire..",
+                "Quelle est la technologie utilisé ?"
+            ]
         },
         {
             "recto": "Pregnancy",
             "verso": "La grossesse",
-            "tips": ""
+            "tips": [
+                "Attention au \"cy\" !",
+                "~MaM"
+            ]
         },
         {
             "recto": "Teenage pregnancy",
             "verso": "Les adolescentes enceintes",
-            "tips": ""
+            "tips": "~MaM"
         },
         {
             "recto": "A pregnancy test",
             "verso": "Un test de grossesse",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "Of childbearing age",
             "verso": "En age de procréer",
-            "tips": ""
+            "tips": "Breading mais en different"
         },
         {
-            "recto": "Womb, uterus",
+            "recto": "Womb",
             "verso": "L'utérus",
-            "tips": ""
+            "tips": "Comme un ver qui va dans un trou"
         },
         {
             "recto": "Motherhood",
             "verso": "La maternité",
-            "tips": ""
+            "tips": "Robinhood il garde l'argent.."
         },
         {
             "recto": "Women's reproductive rights",
             "verso": "Droits des femmes en matière de reporduction",
-            "tips": ""
+            "tips": [
+                "En matière",
+                "3 mots"
+            ]
         },
         {
             "recto": "An embryo",
             "verso": "Un embryon",
-            "tips": ""
+            "tips": "Transparent"
         },
         {
             "recto": "A foetus",
             "verso": "Un foetus",
-            "tips": ""
+            "tips": "Transparent"
         },
         {
             "recto": "An abortion",
             "verso": "Un avortement",
-            "tips": ""
+            "tips": "v = b en espagnol .."
         },
         {
             "recto": "A termination",
             "verso": "Une IVG",
-            "tips": ""
+            "tips": "Une terminaison de grossesse.."
         },
         {
             "recto": "A late abortion",
             "verso": "Un avortement tardif",
-            "tips": ""
+            "tips": [
+                "C'est pas en retard",
+                "C'est en retard"
+            ]
         },
         {
             "recto": "To have an abortion",
             "verso": "Avorter",
-            "tips": ""
+            "tips": "Avoir un avortement.."
         },
         {
             "recto": "To abort an unwanted baby",
             "verso": "Avorter d'un bébé non désiré",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "To terminate a pregnancy",
             "verso": "Pratiquer une IVG",
-            "tips": ""
+            "tips": "Terminer une grossesse.."
         },
         {
             "recto": "An abortion clinic",
             "verso": "Une clinique pratiquant l'avortement",
-            "tips": ""
+            "tips": "C'est comme un centre qui adopte.."
         },
         {
-            "recto": "To carry out abortion",
+            "recto": "To perform abortion",
             "verso": "Pratiquer l'avortement",
-            "tips": ""
+            "tips": [
+                "faire quoi..",
+                "La performance"
+            ]
         },
         {
             "recto": "To induce an abortion",
             "verso": "Provoquer un avortement",
-            "tips": ""
+            "tips": "MaM"
         },
         {
-            "recto": "Self-indected abortion",
+            "recto": "Self-induced abortion",
             "verso": "Avortement que l'on a provoqué soi-même",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "Backstreet abortion",
-            "verso": "Avortement clandestin",
-            "tips": ""
+            "verso": "Un avortement clandestin",
+            "tips": "Au fond de la rue (177013)"
         },
         {
             "recto": "An abortionist",
             "verso": "Un avorteur",
-            "tips": ""
+            "tips": "Transparent"
         },
         {
             "recto": "A martenity hostpital",
             "verso": "Une maternité",
-            "tips": ""
+            "tips": [
+                "Transparent",
+                "Et elle se trouve où ?"
+            ]
         },
         {
             "recto": "A gynecologist",
             "verso": "Un gynécologue",
-            "tips": ""
+            "tips": "Transparent"
         },
         {
             "recto": "A midwife",
             "verso": "Une sage-femme",
-            "tips": ""
+            "tips": "Une femme du milieu (comme Gandalf le sage)"
         },
         {
             "recto": "To go on maternity leave",
             "verso": "Partir en congé maternité",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "Parental leave",
             "verso": "Congé parental",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "A birth",
@@ -153,62 +171,60 @@
         {
             "recto": "The birth rate",
             "verso": "Le taux de natalité",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "To give birth a girl/boy",
-            "verso": "Achoucher d'une fille/garçon",
-            "tips": ""
+            "verso": "Acoucher d'une fille/garçon",
+            "tips": "Donner naissance.."
         },
         {
             "recto": "A premature baby",
-            "verso": "Un prématuré",
-            "tips": ""
+            "verso": "Un bébé prématuré",
+            "tips": "MaM"
         },
         {
             "recto": "An incubator",
             "verso": "Une couveuse",
-            "tips": ""
+            "tips": "~Transparent"
         },
         {
             "recto": "To have a miscarriage",
             "verso": "Faire une fausse couche",
-            "tips": ""
+            "tips": "Ta raté ta carrière, ta raté ton enfant"
         },
         {
             "recto": "To die in childbirth",
             "verso": "Mourir en couche",
-            "tips": ""
+            "tips": "Le bébé (LOL) porte des couches"
         },
         {
             "recto": "A stillborn baby",
             "verso": "Un bébé mort-né",
-            "tips": ""
+            "tips": [
+                "Nan je ne croit pas..",
+                "Je vous jure qu'il est encore en vie"
+            ]
         },
         {
             "recto": "Infanticide",
             "verso": "Un infanticide",
-            "tips": ""
-        },
-        {
-            "recto": "A midwife",
-            "verso": "Une sage-femme",
-            "tips": ""
+            "tips": "Transparent"
         },
         {
             "recto": "A means of contraception",
             "verso": "Un moyen de contraception",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "Birth control",
             "verso": "Le contrôle des naissances",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "Family planning",
             "verso": "Le planning familial",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "The pill",
@@ -218,32 +234,35 @@
         {
             "recto": "The morning-after pill",
             "verso": "La pilule du lendemain",
-            "tips": ""
+            "tips": [
+                "MaM",
+                "Le matin d'après"
+            ]
         },
         {
             "recto": "To be on the pill",
             "verso": "Prendre la pilule",
-            "tips": ""
+            "tips": "Se droguer.."
         },
         {
             "recto": "A contraceptive",
             "verso": "Un contraceptif",
-            "tips": ""
+            "tips": "Transparent"
         },
         {
             "recto": "Vasectomy",
             "verso": "La vasectomie",
-            "tips": ""
+            "tips": "Transparent"
         },
         {
             "recto": "A condom",
-            "verso": "Un preservatif",
+            "verso": "Un préservatif",
             "tips": ""
         },
         {
-            "recto": "A coil",
+            "recto": "An IUD",
             "verso": "Un stérilet",
-            "tips": ""
+            "tips": "Comme une carpe qui te mange l'utérus (bon appétit)"
         },
         {
             "recto": "Rape",
@@ -253,67 +272,76 @@
         {
             "recto": "Incest",
             "verso": "L'inceste",
-            "tips": ""
+            "tips": "Transparent"
         },
         {
             "recto": "A controversy",
             "verso": "Une polémique",
-            "tips": ""
+            "tips": [
+                "Si c'est controversé c'est une..",
+                "Une controverse"
+            ]
         },
         {
-            "recto": "A controvesial issue",
+            "recto": "A controversial issue",
             "verso": "Un problème controversé",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "Abortion is a divisive issue",
-            "verso": "L'avortement divise l'opinion",
-            "tips": ""
+            "verso": "L'avortement est une question qui divise",
+            "tips": "MaM"
         },
         {
             "recto": "The public are split",
             "verso": "L'opinion est divisé",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "A hot-button issue",
             "verso": "Un problème sensible",
-            "tips": ""
+            "tips": "Un boutton chaud et sensible"
         },
         {
             "recto": "The pro-life lobby",
             "verso": "Le lobby des opposants à l'avortement",
-            "tips": ""
+            "tips": [
+                "Qui est composé de qui ?",
+                "Il sont donc pour la vie.."
+            ]
         },
         {
             "recto": "A pro-life campaigner",
             "verso": "Un militant contre l'avortement",
-            "tips": ""
+            "tips": "MaM"
         },
         {
-            "recto": "To oppose abortion",
+            "recto": "Being opposed to abortion",
             "verso": "Etre opposé à l'avortement",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "A pro-choice activist",
             "verso": "Un militant pour le droit à l'avortement",
-            "tips": ""
+            "tips": "Comme les pro-life"
         },
         {
             "recto": "To be pro-choice",
             "verso": "Etre en faveur de l'avortement",
-            "tips": ""
+            "tips": [
+                "Je suis en faveur",
+                "Pro-.."
+            ]
         },
         {
             "recto": "To legalise abortion",
             "verso": "Légaliser l'avortement",
-            "tips": ""
+            "tips": "MaM"
         },
         {
             "recto": "To ban abortion",
             "verso": "Interdir l'avortement",
-            "tips": ""
+            "tips": "MaM"
         }
     ]
 }
