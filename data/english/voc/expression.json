@@ -24,6 +24,11 @@
             "qst": "Once in a blue moon",
             "answer": "Tous les 36 du mois",
             "tip": "Rare comme une \"double lune\""
+        },
+        {
+            "recto": "A hot-button issue",
+            "verso": "Un problème sensible",
+            "tips": "Un boutton chaud et sensible"
         }
     ]
 }
