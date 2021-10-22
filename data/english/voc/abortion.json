@@ -53,7 +53,7 @@
         },
         {
             "recto": "Women's reproductive rights",
-            "verso": "Droits des femmes en matière de reporduction",
+            "verso": "Les droits des femmes en matière de reproduction",
             "tips": [
                 "En matière",
                 "3 mots"
@@ -136,7 +136,7 @@
             "tips": "Transparent"
         },
         {
-            "recto": "A martenity hostpital",
+            "recto": "A maternity hospital",
             "verso": "Une maternité",
             "tips": [
                 "Transparent",
@@ -196,7 +196,10 @@
         {
             "recto": "To die in childbirth",
             "verso": "Mourir en couche",
-            "tips": "Le bébé (LOL) porte des couches"
+            "tips": [
+                "Le bébé (LOL) porte des couches",
+                "Mourir à la naissance du bébé"
+            ]
         },
         {
             "recto": "A stillborn baby",
@@ -293,7 +296,7 @@
             "tips": "MaM"
         },
         {
-            "recto": "The public are split",
+            "recto": "The public is split",
             "verso": "L'opinion est divisé",
             "tips": "MaM"
         },
@@ -316,7 +319,7 @@
             "tips": "MaM"
         },
         {
-            "recto": "Being opposed to abortion",
+            "recto": "To be opposed to abortion",
             "verso": "Etre opposé à l'avortement",
             "tips": "MaM"
         },
