@@ -3,14 +3,14 @@ use std::{fmt, mem};
 use crate::ask::Ask;
 
 pub struct Card {
-    pub recto: String,
-    pub verso: String,
+    pub recto: Vec<String>,
+    pub verso: Vec<String>,
     pub tip: Tip,
     pub only_recto: bool,
 }
 
 impl Card {
-    pub const fn new(recto: String, verso: String, tip: Tip, only_recto: bool) -> Self {
+    pub const fn new(recto: Vec<String>, verso: Vec<String>, tip: Tip, only_recto: bool) -> Self {
         Self {
             recto,
             verso,
@@ -25,6 +25,11 @@ impl Card {
             mem::swap(&mut self.recto, &mut self.verso);
             self.tip.flip()
         }
+    }
+
+    #[inline]
+    pub fn formated_verso(&self) -> String {
+        self.verso.join(" OR ")
     }
 }
 

@@ -20,9 +20,11 @@ pub fn load_data_file(path: &Path) -> Result<DataFile, io::Error> {
 #[derive(Deserialize)]
 pub struct CardJson {
     #[serde(alias = "qst")]
-    recto: String,
+    #[serde(deserialize_with = "single_or_list")]
+    recto: Vec<String>,
     #[serde(alias = "answer")]
-    verso: String,
+    #[serde(deserialize_with = "single_or_list")]
+    verso: Vec<String>,
     #[serde(alias = "tips")]
     #[serde(deserialize_with = "tip_to_Tip")]
     #[serde(default = "tip_none")]
@@ -75,12 +77,11 @@ impl From<String> for Tag {
     }
 }
 
-#[allow(non_snake_case)]
-fn tip_to_Tip<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Tip, D::Error> {
-    struct TipToTip;
+fn single_or_list<'de,  D: Deserializer<'de>>(deserializer: D) -> Result<Vec<String>, D::Error> {
+    struct SingleOrlIst;
 
-    impl<'de> Visitor<'de> for TipToTip {
-        type Value = Tip;
+    impl<'de> Visitor<'de> for SingleOrlIst {
+        type Value = Vec<String>;
 
         fn expecting(&self, formatter: &mut std::fmt::Formatter) -> std::fmt::Result {
             formatter.write_str("a string or a list of string")
@@ -90,32 +91,41 @@ fn tip_to_Tip<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Tip, D::Erro
         where
             E: serde::de::Error,
         {
-            Ok(Tip::One(v.to_owned()))
+            Ok(vec![v.to_owned()])
         }
 
         fn visit_seq<A>(self, mut seq: A) -> Result<Self::Value, A::Error>
         where
             A: serde::de::SeqAccess<'de>,
         {
-            let tip = Tip::RectoVerso(
-                seq.next_element()?.unwrap_or_default(),
-                seq.next_element()?.unwrap_or_default(),
-            );
-            if let Tip::RectoVerso(string, _) = &tip {
-                if !string.is_empty() {
-                    Ok(tip)
-                } else {
-                    Ok(Tip::None)
-                }
-            } else {
-                unreachable!()
+            let mut list = Vec::new();
+            while let Ok(Some(string)) = seq.next_element() {
+                list.push(string);
             }
+            
+            Ok(list)
         }
     }
 
-    let visitor = TipToTip;
+    let visitor = SingleOrlIst;
     deserializer.deserialize_any(visitor)
 }
+
+#[allow(non_snake_case)]
+fn tip_to_Tip<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Tip, D::Error> {
+    let mut tips = single_or_list(deserializer)?;
+    
+    Ok(match tips.len() {
+        0 => Tip::None,
+        1 => Tip::One(tips.pop().unwrap()),
+        _ => {
+            let verso = tips.pop().unwrap();
+            let recto = tips.pop().unwrap();
+            Tip::RectoVerso(recto, verso)
+        },
+    })
+}
+
 
 const fn tip_none() -> Tip {
     Tip::None

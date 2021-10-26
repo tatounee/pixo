@@ -7,7 +7,10 @@
             "tip": "La première lettre (dim+unité)"
         },
         {
-            "qst": "Temps",
+            "qst": [
+                "Temps",
+                "Tmp"
+            ],
             "answer": "T, s",
             "tip": "La première lettre (dim+unité)"
         },

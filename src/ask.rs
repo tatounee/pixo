@@ -161,17 +161,17 @@ impl<R: Rng> Asker<R> {
         let mut user_answer = String::new();
         let mut user_tries = 1;
 
-        println!("{}", card.recto);
+        println!("{}", card.recto[0]);
 
         stdin.read_line(&mut user_answer)?;
 
         loop {
-            if user_answer.trim() == card.verso.trim() {
+            if card.verso.iter().any(|answer| answer.trim() == user_answer.trim()) {
                 println!();
                 self.failed.remove_value(index);
                 break;
             } else if user_tries == self.tries.get() {
-                println!("Answer : {}\n", card.verso);
+                println!("Answer : {}\n", card.formated_verso());
                 self.failed.push(index).unwrap();
                 break;
             } else {
