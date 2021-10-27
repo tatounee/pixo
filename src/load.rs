@@ -77,7 +77,7 @@ impl From<String> for Tag {
     }
 }
 
-fn single_or_list<'de,  D: Deserializer<'de>>(deserializer: D) -> Result<Vec<String>, D::Error> {
+fn single_or_list<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Vec<String>, D::Error> {
     struct SingleOrlIst;
 
     impl<'de> Visitor<'de> for SingleOrlIst {
@@ -102,7 +102,7 @@ fn single_or_list<'de,  D: Deserializer<'de>>(deserializer: D) -> Result<Vec<Str
             while let Ok(Some(string)) = seq.next_element() {
                 list.push(string);
             }
-            
+
             Ok(list)
         }
     }
@@ -114,7 +114,7 @@ fn single_or_list<'de,  D: Deserializer<'de>>(deserializer: D) -> Result<Vec<Str
 #[allow(non_snake_case)]
 fn tip_to_Tip<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Tip, D::Error> {
     let mut tips = single_or_list(deserializer)?;
-    
+
     Ok(match tips.len() {
         0 => Tip::None,
         1 => Tip::One(tips.pop().unwrap()),
@@ -122,10 +122,9 @@ fn tip_to_Tip<'de, D: Deserializer<'de>>(deserializer: D) -> Result<Tip, D::Erro
             let verso = tips.pop().unwrap();
             let recto = tips.pop().unwrap();
             Tip::RectoVerso(recto, verso)
-        },
+        }
     })
 }
-
 
 const fn tip_none() -> Tip {
     Tip::None

@@ -4,7 +4,7 @@ use rand::Rng;
 
 use crate::deck::Deck;
 
-use super::{Asker, FlipMode, Stat, nulos::Nulos};
+use super::{nulos::Nulos, Asker, FlipMode, Stat};
 
 pub struct AskerBuilder<R: Rng> {
     deck: Deck,
@@ -63,7 +63,6 @@ impl<R: Rng> AskerBuilder<R> {
         }
     }
 }
-
 
 impl<R: Rng> fmt::Debug for AskerBuilder<R> {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {

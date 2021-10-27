@@ -35,7 +35,9 @@ impl Card {
     // Return true if the answer was correct
     #[inline]
     pub fn test(&self, answer: &str) -> bool {
-        self.verso.iter().any(|true_answer| true_answer.trim() == answer.trim())
+        self.verso
+            .iter()
+            .any(|true_answer| true_answer.trim() == answer.trim())
     }
 }
 

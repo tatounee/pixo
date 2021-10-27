@@ -1,6 +1,6 @@
+mod builder;
 mod flip_mode;
 mod nulos;
-mod builder;
 
 use std::num::NonZeroU32;
 
@@ -9,16 +9,14 @@ use std::io::{self, Stdin};
 
 use crate::{card::Card, deck::Deck};
 
-pub use flip_mode::FlipMode;
 pub use builder::AskerBuilder;
+pub use flip_mode::FlipMode;
 use nulos::Nulos;
-
 
 pub trait Ask {
     fn advance(&mut self) {}
     fn get_card(&self) -> (&Card, usize); // Card / id
 }
-
 
 pub struct Asker<R: Rng> {
     deck: Deck,

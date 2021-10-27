@@ -125,7 +125,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let deck = Deck::from(data_file);
     let mut asker = AskerBuilder::new(deck, rand::thread_rng());
 
-    // Matche all agrugment from the Clap app
+    // Check DEFAULT profile
     if matches.is_present("default") {
         if !matches.is_present("verso") {
             asker.flip_mode(FlipMode::Random(true))
@@ -134,18 +134,21 @@ fn main() -> Result<(), Box<dyn Error>> {
         asker.max_cycle(NonZeroU32::new(2).unwrap())
     }
 
+    // Check VERSO, RANDOM and ALL_CASE mode
     if matches.is_present("verso") {
         asker.flip_mode(FlipMode::Verso)
     } else if matches.is_present("random") {
         asker.flip_mode(FlipMode::Random(matches.is_present("all_cases")));
     }
 
+    // Get number of CYCLE
     if let Some(pass) = matches.value_of("pass") {
         let max_cycle = NonZeroU32::new(pass.parse::<u32>().unwrap()).unwrap();
 
         asker.max_cycle(max_cycle)
     }
 
+    // Get number of TRY
     if let Some(tries) = matches.value_of("try") {
         let tries = NonZeroU32::new(tries.parse::<u32>().unwrap()).unwrap();
 
