@@ -90,7 +90,7 @@ impl<R: Rng> Asker<R> {
         stdin.read_line(&mut user_answer)?;
 
         loop {
-            if card.verso.iter().any(|answer| answer.trim() == user_answer.trim()) {
+            if card.test(&user_answer) {
                 println!();
                 self.failed.remove_value(index);
                 break;

@@ -31,6 +31,12 @@ impl Card {
     pub fn formated_verso(&self) -> String {
         self.verso.join(" OR ")
     }
+
+    // Return true if the answer was correct
+    #[inline]
+    pub fn test(&self, answer: &str) -> bool {
+        self.verso.iter().any(|true_answer| true_answer.trim() == answer.trim())
+    }
 }
 
 impl Ask for Card {
