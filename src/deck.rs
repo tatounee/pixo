@@ -60,6 +60,7 @@ impl Deck {
 }
 
 impl Ask for Deck {
+    #[inline]
     fn advance(&mut self) {
         self.question_index = (self.question_index + 1) % self.cards.len();
     }
@@ -69,5 +70,6 @@ impl Ask for Deck {
             self.cards.get(self.question_index).unwrap(),
             self.question_index,
         )
+    #[inline]
     }
 }
