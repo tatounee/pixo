@@ -2,12 +2,12 @@
     "questions": [
         {
             "qst": "Don't hold water",
-            "answer": "Ne tiens pas la route",
+            "answer": "Ne tient pas la route",
             "tip": "TENIR"
         },
         {
-            "qst": "Slippery slope",
-            "answer": "Pente glissante",
+            "qst": "A slippery slope",
+            "answer": "Une pente glissante",
             "tip": "Dortoire encorder par l'ISR"
         },
         {
@@ -18,7 +18,7 @@
         {
             "qst": "To be over the moon",
             "answer": "Etre aux anges",
-            "tip": "Dieu habite au desssu de la Lune"
+            "tip": "Dieu habite au desssus de la Lune"
         },
         {
             "qst": "Once in a blue moon",

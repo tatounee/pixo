@@ -77,7 +77,7 @@
         },
         {
             "qst": "Mayor",
-            "answer": "Mair",
+            "answer": "Maire",
             "tip": "Balkany dans la sause"
         },
         {
@@ -96,18 +96,13 @@
             "tip": "Le most"
         },
         {
-            "qst": "To make up",
-            "answer": "Constituer",
-            "tip": "Fait de.."
-        },
-        {
-            "qst": "Draw a parallel",
+            "qst": "To draw a parallel",
             "answer": "Faire un parallèle",
             "tip": "Tracer une droite"
         },
         {
             "qst": "Argue",
-            "answer": "Argument",
+            "answer": "Argumenter",
             "tip": "Transparent"
         },
         {
@@ -116,7 +111,7 @@
             "tip": "MaM"
         },
         {
-            "qst": "Point something out",
+            "qst": "To point something out",
             "answer": "Faire remarquer quelque chose",
             "tip": "Pointer du doigt"
         },
@@ -131,7 +126,7 @@
             "tip": "Prend et on le met à part pour l'exiber"
         },
         {
-            "qst": "To shed light",
+            "qst": "To shed light on",
             "answer": "Faire la lumière sur",
             "tip": "cheh KIRA, tu n'es pas dieux"
         },
