@@ -1,0 +1,115 @@
+{
+    "questions": [
+        {
+            "recto": "Native",
+            "verso": "Natif",
+            "tip": "Transparent"           
+        },
+        {
+            "recto": "To deliver on a promise",
+            "verso": "Tenir une promesse",
+            "tip": [
+                "Deliver ce qu'on a promit..",
+                "\"Donné\" de qu'on a promit"
+            ]           
+        },
+        {
+            "recto": "A land of opportunity",
+            "verso": "Une terre d'avenir",
+            "tip": "Le future est construit d'opportunités"           
+        },
+        {
+            "recto": "WASP",
+            "verso": "White Anglo-Saxon Protestant",
+            "tip": [
+                "Les anglais qui sont partie dans le nouveau monde",
+                "Sigle"
+            ]           
+        },
+        {
+            "recto": "All the more shocking",
+            "verso": "D'autant plus choquant",
+            "tip": [
+                "C'est ... que",
+                "Tous plus choquant les uns que les autres"
+            ]           
+        },
+        {
+            "recto": "Funds",
+            "verso": "Fonds",
+            "tip": "D'investissement"           
+        },
+        {
+            "recto": "Horseback",
+            "verso": "A dos de cheval",
+            "tip": [
+                "~Transparent",
+                "Sur son derrière"
+            ]           
+        },
+        {
+            "recto": "Cattle",
+            "verso": "Bétail",
+            "tip": "Un chateau de cat, ça fais beaucoup de cat"
+        },
+        {
+            "recto": "Inhumane treatment",
+            "verso": "Traitement inhummain",
+            "tip": "MaM"           
+        },
+        {
+            "recto": "Dehumanizing",
+            "verso": "Déshumanisant",
+            "tip": "Transparent"           
+        },
+        {
+            "recto": "Slavery",
+            "verso": "L'esclavage",
+            "tip": "~Transparent"           
+        },
+        {
+            "recto": "Fugitives",
+            "verso": "Des fugutifs",
+            "tip": "Transparent"           
+        },
+        {
+            "recto": "Slaves catchers",
+            "verso": "Les chasseurs d'esclaves",
+            "tip": [
+                "A la chasse on ne tue pas, on prélève"
+            ]          
+        },
+        {
+            "recto": "Whip",
+            "verso": "Fouet",
+            "tip": [
+                "C'est le bruit d'une corde dans les airs",
+                "Ca te wipe tous d'un coup"
+            ]           
+        },
+        {
+            "recto": "Reins",
+            "verso": "Rênes",
+            "tip": "~Transparent (cheval)"           
+        },
+        {
+            "recto": "Fleeing",
+            "verso": "Fuyant",
+            "tip": "~Transparent (to flex pas ma gueule)"           
+        },
+        {
+            "recto": "Gears",
+            "verso": "Matériel"
+        },
+        {
+            "recto": "Armored vest",
+            "verso": "Gilet pare-balles",
+            "tip": "MaM"           
+        },
+        {
+            "recto": "Corralling",
+            "verso": "Parcage",
+            "tip": "On Co-relit les gents ensemble"
+        }
+    ]
+}
