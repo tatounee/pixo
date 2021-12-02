@@ -110,6 +110,521 @@
             "recto": "Corralling",
             "verso": "Parcage",
             "tip": "On Co-relit les gents ensemble"
-        }
+        },
+	{
+            "recto": "A foreigner",
+            "verso": "Un étranger",
+            "tips": "quelqu'un qui pratique la gitanerie avec des manèges"
+        },
+        {
+            "recto": "A stranger",
+            "verso": "Un inconnu",
+            "tips": "quand qqun est bizarre il est ..."
+        },
+        {
+            "recto": "Nationality",
+            "verso": "Une nationalité",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A foreign national",
+            "verso": "Un ressortissant étranger",
+            "tips": "celui qui fait des manèges"
+        },
+        {
+            "recto": "French citizens",
+            "verso": "Les personnes de nationalité française",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To emigrate to New Zeland",
+            "verso": "Emigrer en Nouvelle-Zelande",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To immigrate to France",
+            "verso": "Immigrer en France",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A wave of immigration",
+            "verso": "Une vague d'immigration",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Mass immigration",
+            "verso": "immigration à grande échelle",
+            "tips": "transparent"
+        },
+        {
+            "recto": "An exodus",
+            "verso": "Un exode",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A newcomer",
+            "verso": "Un nouvel arrivant",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Home country",
+            "verso": "Pays d'origine",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Homeland",
+            "verso": "La patrie",
+            "tips": "la terre de chez nous"
+        },
+        {
+            "recto": "A host country",
+            "verso": "Un pays d'accueil",
+            "tips": "quand on on ... un serveur minecraft mais avec des migrants"
+        },
+        {
+            "recto": "An adoptive country",
+            "verso": "Un pays d'adoption",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To welcome",
+            "verso": "Accueillir",
+            "tips": "comme sur le paillasson"
+        },
+        {
+            "recto": "Welcoming",
+            "verso": "Accueillant",
+            "tips": "se faire paillassoner (il faut avoir fait une autre question avant)"
+        },
+        {
+            "recto": "Immigration policy",
+            "verso": "La politique migratoire",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Selective immigration",
+            "verso": "Immigration choisie",
+            "tips": "l'immigration comme parcoursup"
+        },
+        {
+            "recto": "Migration flows",
+            "verso": "Les flux migratoires",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A stowaway",
+            "verso": "Un passager clandestin",
+            "tips": "t'es stone et tu as un huwei"
+        },
+        {
+            "recto": "Illegal immigration",
+            "verso": "L'immigration clandestine",
+            "tips": "quasiment transparent"
+        },
+        {
+            "recto": "An illegal immigrant",
+            "verso": "Un immigrant clandestin",
+            "tips": "transparent"
+        },
+        {
+            "recto": "His papers are not in order",
+            "verso": "Il est en situation irrégulière",
+            "tips": "Hop, hop, hop, police Nationale ... du vehicule"
+        },
+        {
+            "recto": "A border",
+            "verso": "Une frontière",
+            "tips": "un .. d'une figure"
+        },
+        {
+            "recto": "To close one's borders",
+            "verso": "Fermer ses frontières",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Border Controls",
+            "verso": "Les contrôles d'identité",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Identity checks",
+            "verso": "Les contrôles d'identité",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A holding centre",
+            "verso": "Un centre de rétention",
+            "tips": "après un ..-up on va en prison"
+        },
+        {
+            "recto": "A passport",
+            "verso": "Un passeport",
+            "tips": "transparent"
+        },
+        {
+            "recto": "An identity card",
+            "verso": "Une carte d'identité",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A visa",
+            "verso": "Un visa",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A refugee",
+            "verso": "Un réfugié",
+            "tips": "transparent(à peu près)"
+        },
+        {
+            "recto": "A displaced person",
+            "verso": "Une personne déplacée",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A stateless person",
+            "verso": "Un apatride",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To take refuge",
+            "verso": "Se réfugier",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To seek political asylum",
+            "verso": "Demander l'asile politique",
+            "tips": "transparent parce que j'ai pas d'idée"
+        },
+        {
+            "recto": "An asylum-seeker",
+            "verso": "Un demandeur d'asile",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To flee persecution",
+            "verso": "Fuir la persécution",
+            "tips": "On est s'échape on est free (r ou l...)"
+        },
+        {
+            "recto": "To escape poverty",
+            "verso": "Echapper à la pauvreté",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To be in search of better living-conditions",
+            "verso": "Chercher de meilleures conditions de vie",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Human trafficking",
+            "verso": "Le trafic des êtres humains",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A smugger",
+            "verso": "Un contrebandier",
+            "tips": "c'est méchant comme smaug sans A!"
+        },
+        {
+            "recto": "People-smuggers",
+            "verso": "Les passeurs d'immigrants clandestins",
+            "tips": "les smaug sans A! qui sont le peuple"
+        },
+        {
+            "recto": "A smuggling ring",
+            "verso": "Un réseau de passeurs",
+            "tips": "le reseau de smaug! le vilain!"
+        },
+        {
+            "recto": "A fake passport",
+            "verso": "Un faux passport",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To escort somebody back to the border",
+            "verso": "reconduire quelqu'un à la frontière",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To send an immigrant back to his native country",
+            "verso": "Renvoyer un immigrant dans son pays d'origine",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To deport somebody",
+            "verso": "Expulser quelqu'un",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To be turned away at the border",
+            "verso": "Etre refoulé à la frontière",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To be ordered out of the country",
+            "verso": "Etre expulsé",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To go into exile",
+            "verso": "S'exiler",
+            "tips": "transparent"
+        },
+        {
+            "recto": "An exile",
+            "verso": "Un exilé",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To exile",
+            "verso": "Exiler qn",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To expatriate oneself",
+            "verso": "S'expatrier",
+            "tips": "transparent"
+        },
+        {
+            "recto": "An expatriate",
+            "verso": "Un expatrié",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To defect to the West",
+            "verso": "Passer à l'Ouest",
+            "tips": "quand on trahi, on est une merde, or c'est le résultat de ... quand on est au WC"
+        },
+        {
+            "recto": "Brain drain",
+            "verso": "fuite des cerveaux",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To start from scratch",
+            "verso": "Partir de rien",
+            "tips": "tout les dev français on commencé avec ... au collège"
+        },
+        {
+            "recto": "Moonlighting",
+            "verso": "Le travail au noir",
+            "tips": "tips à trouver pck là ..."
+        },
+        {
+            "recto": "A sweatshop",
+            "verso": "Un atelier clandestin",
+            "tips": "aucune idée.."
+        },
+        {
+            "recto": "To exploit migrant workers",
+            "verso": "Exploiter les travailleurs immigrés",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A work permit",
+            "verso": "Un permis de travail",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A residence permit",
+            "verso": "Un permis de séjour",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A migrant worker",
+            "verso": "Un travailleur migrant",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A guest worker",
+            "verso": "Un travailleur invité",
+            "tips": "tomber, devenir"
+        },
+        {
+            "recto": "To become integrated",
+            "verso": "S'intégrer",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To become well into a society",
+            "verso": "Bien s'intégrer dans une société",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Social integration",
+            "verso": "L'insertion sociale",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To regularise the status of illegal immigrants",
+            "verso": "Régulariser la situation des clandestins",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Regularisation",
+            "verso": "La régularisation",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To be granted British citizenship",
+            "verso": "Se faire naturaliser britannique",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To become a British citizen",
+            "verso": "Etre naturalisé britannique",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A quota",
+            "verso": "Un quota",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Family reunion",
+            "verso": "Le regroupement familial",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A benefit cheat",
+            "verso": "Qn qui a abuse du système des prestations",
+            "tips": "Il X-ray il ...!!"
+        },
+        {
+            "recto": "Benefit fraud",
+            "verso": "La fraude aux prestations sociales",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A freeloader",
+            "verso": "Un parasite",
+            "tips": "aucune idée"
+        },
+        {
+            "recto": "A sham marriage",
+            "verso": "Un mariage blanc",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To flood",
+            "verso": "Inonder",
+            "tips": "simple"
+        },
+        {
+            "recto": "To be swamped with foreigners",
+            "verso": "Etre envahi par les étrangers",
+            "tips": "transparent"
+        },
+        {
+            "recto": "The influx of workers",
+            "verso": "L'arrivée massive de travailleurs",
+            "tips": "quand on insufle de l'air dans un balon il y a bcp de d'air qui arrive"
+        },
+        {
+            "recto": "To stem the flow of immigrants",
+            "verso": "Engiguer l'afflux d'immigrés",
+            "tips": "aucun idée d'aide"
+        },
+        {
+            "recto": "To restrict immigrants",
+            "verso": "Limiter l'immigration",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A far-right party",
+            "verso": "Un parti d'extrême-droite",
+            "tips": "un phare dans la nuit"
+        },
+        {
+            "recto": "To scare immigrants away",
+            "verso": "Faire fuir les immigrants",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To keep out undesirables",
+            "verso": "Empêcher les indésirables d'entrer",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Xenophobia",
+            "verso": "La xénophobie",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Xenophobic",
+            "verso": "Xénophobe",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Second-generation immigrants",
+            "verso": "Des immigrés de deuxième génération",
+            "tips": "transparent"
+        },
+        {
+            "recto": "To have a foreign-born grandfather",
+            "verso": "Avoir un grand-père né à l'étranger",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Young men of Asian descent",
+            "verso": "Des jeunes gens d'origine asiatique",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Young men of Portuguese descent",
+            "verso": "Des jeunes gens d'origine portugaise",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A native of France",
+            "verso": "Un Français de naissance",
+            "tips": "transparent"
+        },
+        {
+            "recto": "A born and bred New Yorker",
+            "verso": "Un New Yorkais de souche",
+            "tips": "quasiment transparent"
+        },
+        {
+            "recto": "He's of French origin",
+            "verso": "Il est français de souche",
+            "tips": "tomber, devenir"
+        },
+        {
+            "recto": "North Africa",
+            "verso": "Le Maghreb",
+            "tips": "il faut un peu de culture géographique"
+        },
+        {
+            "recto": "North Africans",
+            "verso": "Les Maghrébins",
+            "tips": "il faut un peu de culture géographique"
+        },
+        {
+            "recto": "Pakistani",
+            "verso": "Pakistanais",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Bangladeshi",
+            "verso": "Du Bangladesh",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Spanish-speaking",
+            "verso": "Hispanophone",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Hndi-speaking",
+            "verso": "Parlant le Hindi",
+            "tips": "transparent"
+        },
+        {
+            "recto": "Diaspora",
+            "verso": "Diaspora",
+            "tips": "transparent"
+        }   
     ]
 }
