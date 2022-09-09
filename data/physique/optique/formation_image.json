@@ -41,7 +41,7 @@
             "tip": "Lunette de vue"
         },
         {
-            "qst": "Système dont l'image d'un plan ⊥ à l'axe optique et un plan ⊥ à l'axe optique",
+            "qst": "Système dont l'image d'un plan ⊥ à l'axe optique est un plan ⊥ à l'axe optique",
             "answer": "Aplanétique",
             "tip": "Comme si ça l'aplatissait"
         },
@@ -171,7 +171,7 @@
         },
         {
             "qst": "Élement d'une lunette astronomique",
-            "answer": "Deux lentille convergentes. Objectif de grande distance focal. Oculaire de petite distance focal",
+            "answer": "Deux lentilles convergentes. Objectif de grande distance focal. Oculaire de petite distance focal",
             "tip": "2 truc, et leur nom"
         },
         {
